@@ -5,7 +5,7 @@ import ViewMore from "../portfolio/viewMore";
 import Button from "../button";
 import React from "react";
 
-const Project5 = () => {
+const ForestWise = () => {
     document.title = "ForestWise";
     React.useEffect(()=>{
         window.scrollTo(0,0);
@@ -21,4 +21,4 @@ const Project5 = () => {
     )
 }
 
-export default Project5
+export default ForestWise

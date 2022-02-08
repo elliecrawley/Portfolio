@@ -12,7 +12,7 @@ import WebsiteAccessibility from "./components/projects/websiteAccessibility";
 import EmilyCarter from "./components/projects/emilyCarter";
 import WineSpark from "./components/projects/wineSpark";
 import CulturedBiomecare from "./components/projects/culturedBiomecare";
-//import Project5 from "./components/projects/project5";
+//import ForestWise from "./components/projects/project5";
 import SmallerProjects from "./components/projects/smallerProjects";
 import AveryRow from "./components/projects/averyRow";
 
@@ -42,7 +42,7 @@ function App() {
           <CulturedBiomecare/>    
       </Route>
       {/* <Route path="/ForestWise">   
-          <Project5/>   
+          <ForestWise/>   
       </Route> */}
       <Route path="/Avery-Row">   
           <AveryRow/>   
