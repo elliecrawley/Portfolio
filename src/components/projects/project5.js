@@ -15,7 +15,7 @@ const Project5 = () => {
             <PortfolioHero/>
             <PortfolioAbout/>
             <PortfolioResponsibilities/>
-            <Button wrapper_outer='portfolio-cta__outer-wrapper' wrapper_inner='portfolio-cta__inner-wrapper' btn_class='portfolio-cta' text='View Live Site'/>
+            <Button wrapper_outer='portfolio-cta__outer-wrapper' wrapper_inner='portfolio-cta__inner-wrapper' wrapper_inner_inner="portfolio-cta__inner-inner" btn_class='portfolio-cta' text='View Live Site'/>
             <ViewMore/>
         </>
     )

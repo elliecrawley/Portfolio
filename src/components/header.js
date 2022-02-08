@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <>
         <header className="header" id="Home">
-            <Link to="/" className="logo"><p>Ellie Crawley</p></Link>
+            <Link to="/" className="logo"><p>ELLIECRAWLEY</p></Link>
             <FaBars onClick={dropdownMenu}/>
             <nav className="menu-items contrast-text-color">
                 <ul>
