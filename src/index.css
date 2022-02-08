@@ -53,8 +53,17 @@ a, button{
   transition: all 0.3s;
 }
 
+.git-link{
+  font-weight: bold;
+}
+
+.git-link:hover{
+  font-size:105%
+}
+
 .hero a:hover, header a:hover, footer a:hover{
   transform: scale(1.1);
+  font-weight: 500;
 }
 
 footer a:focus, footer a:focus{
@@ -522,7 +531,7 @@ figure{
   padding: 0;
   height: 50px;
   bottom: 0;
-  transition: height .5s ease;
+  transition: all .5s ease;
   font-size: 1em;
 }
 
@@ -558,6 +567,7 @@ figure{
 
 .portfolio-item:hover .portfolio-text{
   height: 100%;
+  opacity: 0.9;
 }
 
 .View-more__container-inner .portfolio-item:hover .portfolio-text{

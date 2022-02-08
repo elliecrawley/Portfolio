@@ -17,7 +17,7 @@ const WebsiteAccessibility = () => {
             <PortfolioHero/>
             <PortfolioAbout text="A selection of tools to improve the accessibility of written web content for people with visual impairments and dyslexia. This tool is still in the early stages of development and has not yet been tested on dynamic content but in the future I hope to develop it into a Shopify app."/>
             <PortfolioResponsibilities title="Key Features"/>
-            <a href="https://github.com/elliecrawley/Accessibility-tool.git" target="_blank" rel="noreferrer">
+            <a href="https://github.com/elliecrawley/Accessibility-tool" target="_blank" rel="noreferrer">
                 <Button wrapper_outer='portfolio-cta__outer-wrapper' wrapper_inner='portfolio-cta__inner-wrapper' wrapper_inner_inner="portfolio-cta__inner-inner" btn_class='portfolio-cta' text='View GitHub Repository'/>
             </a>
             <ViewMore/>

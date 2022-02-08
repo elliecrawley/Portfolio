@@ -13,7 +13,7 @@ const year = date.getFullYear();
 <footer>
     <div className="footer-logo-container">
         <NavLink to="/#Home" className="footer-logo"><p>Ellie Crawley</p></NavLink>
-        <p className='copyright'> Copyright <FaCopyright/> {year} All rights reserved</p>
+        <p className='copyright'> Copyright <FaCopyright/> {year} <nbsp/> All rights reserved</p>
     </div>
     <div className='footer-nav-container'>
         <nav className="menu-items contrast-text-color">
@@ -24,8 +24,8 @@ const year = date.getFullYear();
             </ul>
         </nav>
         <div className='social'>
-        <a href='#'><FaLinkedin/></a>
-            <a href='#'><FaGithub/></a>  
+        <a href='#' target="_blank" rel="noreferrer"><FaLinkedin/></a>
+        <a href='https://github.com/elliecrawley' target="_blank" rel="noreferrer"><FaGithub/></a>  
         </div>
     </div> 
 </footer>
