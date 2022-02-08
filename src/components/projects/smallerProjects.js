@@ -4,7 +4,7 @@ import PortfolioResponsibilities from "../portfolio/portfolioResponsibilities";
 import ViewMore from "../portfolio/viewMore";
 import React from "react";
 
-const Project6 = () => {
+const SmallerProjects = () => {
 
     document.title = "Smaller Projects";
     React.useEffect(()=>{
@@ -15,10 +15,10 @@ const Project6 = () => {
         <>
             <PortfolioHero/>
             <PortfolioAbout text="I have assisted on several Shopify stores with work such as uploading and updating products and collections, making minor styling edits, installing and configuring apps, and assisting with email marketing campaigns. Below are a selection of clients whose stores I have helped to update or maintain."/>
-            <PortfolioResponsibilities/>
+            <PortfolioResponsibilities title="Client Details"/>
             <ViewMore/>
         </>
     )
 }
 
-export default Project6
+export default SmallerProjects

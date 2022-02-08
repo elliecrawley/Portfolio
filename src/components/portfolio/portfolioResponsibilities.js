@@ -2,14 +2,14 @@ import {project_details, projectData} from "./portfolioData"
 import SectionTitle from "../sectionTitle"
 import PortfolioRespItems from "./portfolioRespItems"
 
-const PortfolioResponsibilities = () => {
+const PortfolioResponsibilities = ({title}) => {
 projectData()
 
     return (
         <section className="Portfolio__resp-container">
             <div className="Portfolio__resp-inner">
                 <div className="Portfolio__resp-inner-inner">
-                    <SectionTitle text="Responsibilities"/>
+                    <SectionTitle text={title}/>
                     {project_details.map(({Heading, Description, Key, imgSrc, alt, videoSrc, type, media, secondaryBtn, href})=>{
                         if(media === "image"){
                             if(secondaryBtn === true){

@@ -8,13 +8,13 @@ import Header from "./components/header";
 import Index from "./components";
 
 //Portfolio
-import Project1 from "./components/projects/project1";
-import Project2 from "./components/projects/project2";
-import Project3 from "./components/projects/project3";
-import Project4 from "./components/projects/project4";
+import WebsiteAccessibility from "./components/projects/websiteAccessibility";
+import EmilyCarter from "./components/projects/emilyCarter";
+import WineSpark from "./components/projects/wineSpark";
+import CulturedBiomecare from "./components/projects/culturedBiomecare";
 //import Project5 from "./components/projects/project5";
-import Project6 from "./components/projects/project6";
-import Project7 from "./components/projects/project7";
+import SmallerProjects from "./components/projects/smallerProjects";
+import AveryRow from "./components/projects/averyRow";
 
 //footer
 import Footer from "./components/footer";
@@ -30,25 +30,25 @@ function App() {
         <Index/>
       </Route>
       <Route path="/Accessiblity-tool">
-          <Project1/>
+          <WebsiteAccessibility/>
       </Route>
       <Route path="/Emily-Carter">
-          <Project2/>
+          <EmilyCarter/>
       </Route>
       <Route path="/WineSpark">
-          <Project3/>      
+          <WineSpark/>      
       </Route>
       <Route path="/Cultured-Biomecare">       
-          <Project4/>    
+          <CulturedBiomecare/>    
       </Route>
       {/* <Route path="/ForestWise">   
           <Project5/>   
       </Route> */}
       <Route path="/Avery-Row">   
-          <Project7/>   
+          <AveryRow/>   
       </Route>
       <Route path="/Smaller-Projects">  
-          <Project6/>  
+          <SmallerProjects/>  
       </Route>
     </Switch>
     <Footer/>

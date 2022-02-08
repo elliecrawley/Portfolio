@@ -2,7 +2,7 @@
   --main-background-color: #EAE6EC /*#e1d1d4*/;
   --contrast-bg: #ebece9;
   --header-font: 'Montserrat', sans-serif;
-  --main-text-color: #0C0C4D;
+  --main-text-color: #23396A;
   --contrast-text-color: #0C0C4D;
   --hero-column-width: 50.50%;
   --btn-hover: #C1B5C6;
@@ -10,7 +10,7 @@
   /*'Catamaran', sans-serif;*/
 
   --body-font: 'Montserrat', sans-serif;
-  --border: 3px #0C0C4D solid;
+  --border: 3px #23396A solid;
   --fillament: #fcfdf9;
   --lightbulb: #FFE57B;
   --glow: #BD4F4F;
@@ -42,8 +42,6 @@ h2{
 }
 
 section, header, footer{
-    max-width: 1400px;
-    margin: auto;
     height: fit-content;
 }
 a{
@@ -99,6 +97,7 @@ footer a:focus, footer a:focus{
   font-weight: bold;
   background-color: transparent;
   transition: all 0.3s;
+  color: var(--main-text-color);
 }
 
 .secondary-btn:hover{
@@ -437,7 +436,7 @@ section.about {
 }
 
 .about_header, .about_body{
-  color: var(--contrast-text-color);
+  color: var(--main-text-color);
 }
 
 @media screen and (min-width: 1024px){
@@ -647,7 +646,7 @@ figure{
   border-top: var(--border);
   border-right: var(--border);
   grid-row: 1;
-  color: var(--contrast-text-color);
+  color: var(--main-text-color);
   font-weight: 400;
   padding-right: 30px;
 }
@@ -674,7 +673,7 @@ form{
 }
 
 label, .errorMessage {
-  color: var(--contrast-text-color);
+  color: var(--main-text-color);
   font-size: 0.9em;
   font-weight: 400;
   font-family: var(--body-font);
@@ -714,7 +713,7 @@ input {
   font-size: 1.1em;
   font-family: var(--header-font);
   font-weight: 600;
-  color: var(--contrast-text-color);
+  color: var(--main-text-color);
   border-top: var(--border);
 }
 
@@ -896,7 +895,6 @@ label {
   background-color: rgba(235,236,233,0.8);
   padding: 100px 50px;
   width: 100%;
-  max-width: 1400px;
   box-sizing: border-box;
   text-align: center;
   font-family: var(--header-font);
@@ -1100,13 +1098,8 @@ label {
 .portfolio-cta{
   height: 50px;
   width: 50vw;
-  margin-left: auto;
-  margin-right: 0;
-  display: block;
   border-bottom: var(--border);
-  border-right: var(--border);
   border-top: none;
-  border-left: none;
   background: none;
   font-size: 1em;
   font-family: var(--header-font);
@@ -1115,6 +1108,12 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  margin-left: auto;
+  border-top: none;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-left: none;
 }
 
 .portfolio-cta__inner-wrapper {
@@ -1124,9 +1123,6 @@ label {
 
 .portfolio-cta__outer-wrapper {
   background-color: var(--main-background-color);
-  max-width: 1400px;
-  margin: auto;
-  height: fit-content;
 }
 
 .portfolio-cta__inner-inner{
