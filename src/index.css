@@ -974,9 +974,12 @@ label {
   flex-direction: column;
   margin: 25px 0;
   align-items: center;
-  box-shadow: var(--box-shadow-mobile);
   box-sizing: border-box;
   padding: 25px;
+}
+
+.Portfolio__resp-item-container-shadow{
+  box-shadow: var(--box-shadow-mobile);
 }
 
 .Portfolio__resp-item-container:nth-child(2){
@@ -985,6 +988,29 @@ label {
 
 .Portfolio__resp-item-container:last-child{
   margin-bottom: 0;
+}
+
+.projects-git-link{
+  height: 50px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+  width: 50vw;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.projects-git-link:hover{
+font-weight: 600;
+font-size: 130%;
+}
+
+.project-git-wrapper{
+  background: linear-gradient(to right, var(--contrast-bg), var(--main-background-color));
 }
 
 @media screen and (min-width: 550px){
@@ -1003,6 +1029,12 @@ label {
 }
 
 @media screen and (min-width: 1024px){
+
+  .projects-git-link{
+    height: 100px;
+    font-size: 1.2em;
+  }
+
   .Portfolio__resp-inner{
     margin-left: 50px;
   }
@@ -1016,6 +1048,9 @@ label {
     flex-direction: row;
     grid-gap: 50px;
     margin: 50px 0;
+  }
+
+  .Portfolio__resp-item-container-shadow{
     box-shadow: var(--box-shadow-desktop);
   }
 
