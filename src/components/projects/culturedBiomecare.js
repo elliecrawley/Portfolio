@@ -16,9 +16,7 @@ const CulturedBiomecare = () => {
             <PortfolioHero/>
             <PortfolioAbout text="This Shopify store was created for Cultured Biomecare, an award-winning UK based skin care brand. In order to showcase the rich scientific, ethical, and environmental influences behind the product line this site required a large volume of information pages and text based components. Working alongside the lead developer and designer I helped to create these key pages to maximise the readability of this text rich design. This store was created using the 'Debut' theme."/>
             <PortfolioResponsibilities title="Responsibilities"/>
-            <a href="https://culturedbiomecare.com" target="_blank" rel="noreferrer">
-                <Button wrapper_outer='portfolio-cta__outer-wrapper' wrapper_inner='portfolio-cta__inner-wrapper' wrapper_inner_inner="portfolio-cta__inner-inner" btn_class='portfolio-cta' text='View Live Site'/>
-            </a>
+            <Button link="https://culturedbiomecare.com" ctaLink="portfolio-link" wrapper_outer='portfolio-cta__outer-wrapper' wrapper_inner='portfolio-cta__inner-wrapper' wrapper_inner_inner="portfolio-cta__inner-inner" btn_class='portfolio-cta' text='View Live Site'/>
             <ViewMore/>
         </>
     )

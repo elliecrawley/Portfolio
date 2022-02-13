@@ -3,38 +3,38 @@ import React, {useState, useRef, useMemo, useEffect} from "react";
 
 const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, imgClass, videoClass, secondaryBtnClass, href}) => {
 
-//         const targetRef = useRef(null);
-//         const [isVisible, setIsVisible] = useState(false);
+        const targetRef = useRef(null);
+        const [addClass, setAddClass] = useState("Portfolio__resp-item-container");
       
-//         const callbackFunction = entries => {
-//           const [entry] = entries; //const entry = entries[0]
-//           setIsVisible(entry.isIntersecting);
-//         }
+        const callbackFunction = entries => {
+          const [entry] = entries;
+          if(entry.isIntersecting){
+            setAddClass("Portfolio__resp-item-container Portfolio__resp-item-container-shadow")
+          }
+        }
       
-//         const options = useMemo(() => {
-//           return{
-//               root: null,
-//               rootMargin: '0px',
-//               threshold: 0.5,
-//           }
+        const options = useMemo(() => {
+          return{
+              root: null,
+              rootMargin: '0px',
+              threshold: 0.7,
+          }
           
-//         }, []);
+        }, []);
 
-//         useEffect(() => {
-//           const observer = new IntersectionObserver(callbackFunction, options);
-//           const currentTarget = targetRef.current;
-//           if(currentTarget) observer.observe(currentTarget);
+        useEffect(() => {
+          const observer = new IntersectionObserver(callbackFunction, options);
+          const currentTarget = targetRef.current;
+          if(currentTarget) observer.observe(currentTarget);
 
-//           return () => {
-//             if(currentTarget) observer.unobserve(currentTarget);
-//           }
-//         }, [targetRef, options]);
-
-//    console.log(isVisible)
+          return () => {
+            if(currentTarget) observer.unobserve(currentTarget);
+          }
+        }, [targetRef, options]);
 
     return (
 
-        <div className="Portfolio__resp-item-container Portfolio__resp-item-container-shadow">
+        <div className={addClass} ref={targetRef}>
             <video className={videoClass} height="auto" controls>
                 <source src={videoSrc} type={type}/>
             </video>       

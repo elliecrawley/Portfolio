@@ -75,7 +75,7 @@ const ContactForm = () => {
                       <span className='errorMessage'>Please enter a valid email address</span>
                     )}
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" cols="40" rows="5" {...register('message', {
+                <textarea id="message" name="message" {...register('message', {
                         required: true
                       })}></textarea>
                 {errors.message && <span className='errorMessage'>Please enter a message</span>}

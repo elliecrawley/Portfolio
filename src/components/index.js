@@ -8,7 +8,7 @@ import ContactForm from "./contact/contactForm";
 const Index = () => {
   return <>
         <section className="hero">  
-          <HeroSection/>        
+          <HeroSection/>  
         </section>
         <section className="about" id="AboutText">
           <AboutText/>

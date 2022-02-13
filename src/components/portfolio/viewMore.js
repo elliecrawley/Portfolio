@@ -14,9 +14,10 @@ const ViewMore = () => {
             <div className="View-more__container-inner">
             {projectImages.filter(val => val.Project !== title && val.id !== 5)
                   .map(({id, src, alt, Project, path}) => {
-                      const arr = projectImages.length - 1;
-                      const thumbnailFlexWidth = "Portfolio__thumbnails portfolio-item thumbnailLength--" + arr
-                    return <Link to={path} key={id} className={thumbnailFlexWidth}><PortfolioItems src={src} alt={alt} heading={Project}/></Link>
+                        const arr = projectImages.length - 1;
+                        const thumbnailFlexWidth = "Portfolio__thumbnails portfolio-item thumbnailLength--" + arr;
+                        const aria = "Link to " + {Project} + "project page";
+                    return <Link to={path} key={id} className={thumbnailFlexWidth} aria-label={aria}><PortfolioItems src={src} alt={alt} heading={Project}/></Link>
                   })}             
             </div>
         </section>

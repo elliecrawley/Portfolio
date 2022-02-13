@@ -1,7 +1,8 @@
+
 const HeroImage = () => {
     return (
-        <>
-            <img className="hero-img" src="images/Project4.jpg" alt="Ellie Crawley"/>
+        <> 
+            <div className="hero-img" alt="Ellie Crawley"/>
         </>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HashLink as NavLink } from 'react-router-hash-link';
 import {FaCopyright, FaGithub, FaLinkedin} from "react-icons/fa";
 
@@ -24,8 +23,8 @@ const year = date.getFullYear();
             </ul>
         </nav>
         <div className='social'>
-        <a href='#' target="_blank" rel="noreferrer"><FaLinkedin/></a>
-        <a href='https://github.com/elliecrawley' target="_blank" rel="noreferrer"><FaGithub/></a>  
+        <a href='https://www.linkedin.com/in/elliecrawley' target="_blank" rel="noreferrer" aria-label="Link to LinkedIn profile"><FaLinkedin/></a>
+        <a aria-label="Link to GitHub profile" href='https://github.com/elliecrawley' target="_blank" rel="noreferrer"><FaGithub/></a>  
         </div>
     </div> 
 </footer>
