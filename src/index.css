@@ -1,11 +1,11 @@
 :root {
-  --main-background-color: #F9F7F8 /*#EAE6EC #e1d1d4*/;
+  --main-background-color: #F9F7F8;
   --contrast-bg: #ebece9;
   --header-font: 'Montserrat', sans-serif;
   --main-text-color: #23396A;
   --contrast-text-color: #0C0C4D;
   --hero-column-width: 50.50%;
-  --btn-hover: #C1B5C6;
+  --btn-hover: #D9C2B5;
   --body-font: 'Montserrat', sans-serif;
   --border: 3px #AB706A solid;
   --fillament: #fcfdf9;
