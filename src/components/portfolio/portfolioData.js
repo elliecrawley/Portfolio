@@ -187,18 +187,6 @@ export function projectData() {
             },
             {
                 Key: 2, 
-                Heading: "Camel Ski School",  
-                imgSrc: "images/CamelSki.png", 
-                alt:"Camel Ski School Homepage", 
-                videoSrc:"", 
-                type:"", 
-                media:"image",
-                secondaryBtn: true,
-                href:"https://camelskischool.myshopify.com",
-                Description: "Camel Ski School is the UK’s largest waterski centre. Their Shopify store allows them to sell branded merchandise in addition to their main booking site. I uploaded new products, created product filters, and edited images to make them the correct size and file format to upload. Since the product images were all significantly different dimensions I edited the collections pages to standardise the size of the product thumbnails and set different styling to dynamically apply to each image based on its dimensions. I created an FAQ page with dynamic accordion blocks which can be edited and rearranged from the Shopify customiser, as well as a grid style image gallery. This store was built using the 'Dawn' theme."
-            },
-            {
-                Key: 3, 
                 Heading: "ARKIVE Headcare",  
                 imgSrc: "", 
                 alt:"", 
@@ -208,6 +196,18 @@ export function projectData() {
                 secondaryBtn: true,
                 href:"https://arkiveheadcare.com",
                 Description: "ARKIVE Headcare is a high-end hair products retailer founded by award winning hairdresser Adam Reed. I created a mega menu which can be easily edited from the Shopify customiser. Menu items can be added and rearranged and the menu supports multiple images which can be repositioned between the different columns. The menu is fully responsive for mobile and tablet. This store was built using the 'Dawn' theme."
+            },
+            {
+                Key: 3, 
+                Heading: "Camel Ski School",  
+                imgSrc: "images/CamelSki.png", 
+                alt:"", 
+                videoSrc:"", 
+                type:"", 
+                media:"image",
+                secondaryBtn: true,
+                href:"https://camelskischool.myshopify.com",
+                Description: "Camel Ski School is the UK’s largest waterski centre. Their Shopify store allows them to sell branded merchandise in addition to their main booking site. I uploaded new products, created product filters, and edited images to make them the correct size and file format to upload. I created an FAQ page with dynamic accordion blocks which can be edited and rearranged from the Shopify customiser, as well as a grid style image gallery. This store was built using the 'Dawn' theme."
             }
         ];
     } else if (window.location.pathname === "/Avery-Row"){

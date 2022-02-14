@@ -10,6 +10,7 @@ const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, 
           const [entry] = entries;
           if(entry.isIntersecting){
             setAddClass("Portfolio__resp-item-container Portfolio__resp-item-container-shadow")
+            console.log("intersection")
           }
         }
       
@@ -17,7 +18,7 @@ const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, 
           return{
               root: null,
               rootMargin: '0px',
-              threshold: 0.7,
+              threshold: 0.5,
           }
           
         }, []);
