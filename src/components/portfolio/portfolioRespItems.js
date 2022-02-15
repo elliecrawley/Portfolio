@@ -35,7 +35,7 @@ const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, 
     return (
 
         <div className={addClass} ref={targetRef}>
-            <video className={videoClass} height="auto" controls poster={imgSrc} alt={alt}>
+            <video className={videoClass} height="auto" controls >
                 <source src={videoSrc} type={type}/>
             </video>       
             <img className={imgClass} src={imgSrc} alt={alt}/>

@@ -1155,12 +1155,12 @@ label {
   object-position: top;
 }
 
-video[poster]{
+/* video[poster]{
   object-fit: contain;
   min-height: 35vw;
   background-color: var(--main-text-color);
   object-position: center;
-}
+} */
 
 .Portfolio__resp-img{
   max-height: 500px;
