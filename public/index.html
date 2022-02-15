@@ -36,7 +36,73 @@
     <title>Ellie Crawley</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+
+      <style>
+      .noscript-txt{
+        padding: 50px 20px;
+        background-color: rgba(255,255,255,0.5);
+        backdrop-filter: blur(7px);
+        font-size: 1em;
+        text-align: center;
+        line-height: 1.3em;
+        color: #23396A;
+        width: 90vw;
+        box-sizing: border-box;
+      }
+
+      .noscript-txt a{
+        text-decoration: none;
+        color: #23396A;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .noscript-txt a:hover, .noscript-txt a:focus{
+        color: #BD4F4F;
+      }
+
+      noscript div{
+        position: absolute;
+        background-position-x: -200px;
+        top: 0;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        background-image: url(images/7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      body{
+        margin: 0;
+        padding: 0;
+      }
+
+      @media screen and (min-width: 700px) {
+        noscript div{
+          background-position-x: center;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+          .noscript-txt{
+          padding: 100px;
+          font-size: 1.5em;
+          line-height: 1.5em;
+          width: 80vw;
+        }
+      }
+
+      </style>
+      <div>
+        <p class="noscript-txt">This website needs JavaScript enabled to work properly. Here are the instructions for how to <a href="https://www.enable-javascript.com/" rel="noopener" target="_blank"> enable JavaScript in your web browser</a></p>
+      </div>
+
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.

@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+
 //Header
 
 import Header from "./components/header";
@@ -17,6 +18,9 @@ import AveryRow from "./components/projects/averyRow";
 
 //footer
 import Footer from "./components/footer";
+
+//404
+import PageNotFound from "./components/pageNotFound";
 
 function App() {
 
@@ -49,6 +53,9 @@ function App() {
       <Route path="/Smaller-Projects">  
           <SmallerProjects/>  
       </Route>
+      <Route path="/404"/>
+          <PageNotFound/>
+      <Redirect to="/404" />
     </Switch>
     <Footer/>
     </div>
