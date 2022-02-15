@@ -10,20 +10,20 @@ projectData()
             <div className="Portfolio__resp-inner">
                 <div className="Portfolio__resp-inner-inner">
                     <SectionTitle text={title}/>
-                    {project_details.map(({Heading, Description, Key, imgSrc, alt, videoSrc, type, media, secondaryBtn, href})=>{
+                    {project_details.map(({Heading, Description, Key, imgSrc, alt, videoSrc, mobileVideo, type, media, secondaryBtn, href})=>{
                         if(media === "image"){
                             if(secondaryBtn === true){
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} imgSrc={imgSrc} alt={alt} imgClass="Portfolio__resp-img" videoClass="hidden" secondaryBtnClass="secondary-btn" href={href}/>
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} imgSrc={imgSrc} alt={alt} imgClass="Portfolio__resp-img" videoMobileClass="hidden" videoDesktopClass="hidden" secondaryBtnClass="secondary-btn" href={href}/>
                             }else{
-                                console.log({secondaryBtn})
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} imgSrc={imgSrc} alt={alt} imgClass="Portfolio__resp-img" videoClass="hidden" secondaryBtnClass="hidden"/>
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} imgSrc={imgSrc} alt={alt} imgClass="Portfolio__resp-img" videoMobileClass="hidden" videoDesktopClass="hidden" secondaryBtnClass="hidden"/>
                             }
                             
                         }else{
                             if(secondaryBtn === true){
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" imgSrc={imgSrc} secondaryBtnClass="secondary-btn" href={href}/>
+
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} videoMobile={mobileVideo} type={type} imgClass="hidden" videoMobileClass="Portfolio__resp-img hidden-desktop" videoDesktopClass="Portfolio__resp-img hidden-mobile" secondaryBtnClass="secondary-btn" href={href}/>
                             }else{
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" imgSrc={imgSrc} secondaryBtnClass="hidden"/>
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} videoMobile={mobileVideo} type={type} imgClass="hidden" videoMobileClass="Portfolio__resp-img hidden-desktop" videoDesktopClass="Portfolio__resp-img hidden-mobile" secondaryBtnClass="hidden"/>
                             }
                         }
                     }

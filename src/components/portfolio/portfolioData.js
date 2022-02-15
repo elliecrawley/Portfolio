@@ -8,6 +8,7 @@ export function projectData() {
                 imgSrc: "images/fontsizethumb.png", 
                 alt:"Font Size Video Thumbnail", 
                 videoSrc:"videos/fontSize.mp4#t=0.1", 
+                mobileVideo: "videos/fontsizemobile.mp4#t=0.1",
                 type:"video/mp4", 
                 media:"video", 
                 Description: "Changing the size of text can improve readability but not everyone will be aware of how to do this in their computer settings. This tool demonstrates how the size of text can be easily changed to maximise user comfort."
@@ -18,6 +19,7 @@ export function projectData() {
                 imgSrc: "images/contrastthumb.png",
                 alt:"Contrast Video Thumbnail",
                 videoSrc:"videos/changeContrast.mp4#t=0.1", 
+                mobileVideo: "videos/changeContrastMobile.mp4#t=0.1",
                 type:"video/mp4", 
                 media:"video", 
                 Description: "Poor contrast between text and background can seriously impair usability. This tool allows users to adjust the contrast to their preference."
@@ -28,6 +30,7 @@ export function projectData() {
                 imgSrc: "images/linetrackerthumb.png", 
                 alt:"Text Highlighter Thumbnail", 
                 videoSrc:"videos/highlighter.mp4#t=0.1", 
+                mobileVideo: "videos/highlighter.mp4#t=0.1",
                 type:"video/mp4", 
                 media:"video",
                 Description: "Highlighting text can make reading easier by helping users to track their place on the page and to maintain focus when reading long pararaphs. This tool allows users to select the colour and brightness level of the highlight, and to either track the text line by line using the mouse/trackpad or sentence by sentence using the 'd' key to move forwards and the 'w' key to move back. The tool is able to detect sentences that end with question marks, exclamation marks, and full stops, without breaking the sentence when it encounters periods in initials, acronyms, title, and other common uses."
@@ -37,7 +40,8 @@ export function projectData() {
                 Heading: "Dyslexia Friendly Styling",  
                 imgSrc: "images/dyslexiathumb.png", 
                 alt:"Dyslexia friendly video thumbnail", 
-                videoSrc:"videos/Dyslexia.mp4#t=0.1", 
+                videoSrc:"videos/Dyslexia.mp4#t=0.1",
+                mobileVideo: "videos/dyslexiamobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "The 'Dyslexia Friendly Style Guide' by the British Dyslexia Association suggests several elements to consider in Dyslexia friendly web styling, including the readability of fonts, headings and structure, and colour. This tool changes the styling of written content to make it more Dyslexia friendly by changing the font family and size; increasing character, word, and line spacing; replacing underlined and italisied content with bold styling and uppercase/small caps text with lower case text; increasing the difference in size between headings and body text; changing the alignment of text; emphasising hyperlinks; and adjusting colour and contrast levels."
@@ -50,7 +54,8 @@ export function projectData() {
                 Heading: "Infinite Scroll", 
                 imgSrc: "images/ISthumb.png", 
                 alt:"Infinite scroll video thumbnail", 
-                videoSrc:"videos/infiniteScroll.mp4#t=0.1", 
+                videoSrc:"videos/infiniteScroll.mp4#t=0.1",
+                mobileVideo: "videos/ISmobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "I developed the code to enable infinite scrolling on the collection pages. This feature can be adjusted from the Shopify customiser and allows the store admin to quickly switch between an infinite scroll which automatically loads more products, one which loads more products when a 'view more' button is clicked, and Shopify's default paginated view. When you click through to a product page it remembers your place on the collections page and quickly restores your position if you navigate back."
@@ -60,7 +65,8 @@ export function projectData() {
                 Heading: "Gallery", 
                 imgSrc: "images/gallerythumb.png",
                 alt:"Gallery Video Thumbnail", 
-                videoSrc:"videos/Gallery.mp4#t=0.1", 
+                videoSrc:"videos/Gallery.mp4#t=0.1",
+                mobileVideo: "videos/galleryMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video", 
                 Description: "I created two gallery pages to show-case the illustrations and patterns used in the products. The gallery has two layout styles - masonry and grid  - which can be easily switched between from the customiser. The masonry gallery supports as many images as required and the images run horizonatlly allowing them to be easily paired in the desired way."
@@ -70,7 +76,8 @@ export function projectData() {
                 Heading: "Product Customisation", 
                 imgSrc: "images/customthumb.png", 
                 alt:"Product Customisation video thumbnail", 
-                videoSrc:"videos/Personalisation.mp4#t=0.1", 
+                videoSrc:"videos/Personalisation.mp4#t=0.1",
+                mobileVideo: "videos/customMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "I added an option to allow customisation of certain product. Selecting this option changes the price of the item and the extra cost is itemised on the cart page along with the customisation details."
@@ -102,7 +109,8 @@ export function projectData() {
                 Heading: "Responsive grid layouts",  
                 imgSrc: "images/gridthumb.png", 
                 alt:"Responsive layouts video thumbnail", 
-                videoSrc:"videos/ResponsiveGrids.mp4#t=0.1", 
+                videoSrc:"videos/ResponsiveGrids.mp4#t=0.1",
+                mobileVideo: "videos/gridMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "The branding guidelines required content to be styled using grid layouts. I created responsive reusable blocks which could be easily adapted with different content depending on whether the user was a member."
@@ -114,7 +122,8 @@ export function projectData() {
                 Heading: "Content Pages", 
                 imgSrc: "images/contentthumb.png", 
                 alt:"Content Page Video Thumbnail", 
-                videoSrc:"videos/CulturedWholePage.mp4#t=0.1", 
+                videoSrc:"videos/CulturedWholePage.mp4#t=0.1",
+                mobileVideo: "videos/contentMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media: "video",
                 Description: "I worked alongside the lead developer to implement many of the key content pages in the About and Philosophy dropdown menus. These were all created as dynamic sections which can be easily added, removed, edited, or rearranged from the customiser to give the client maximum creative control and reduce the need for ongoing developer support in maintaining the site."
@@ -124,7 +133,8 @@ export function projectData() {
                 Heading: "Product Pages", 
                 imgSrc: "images/productthumb.png", 
                 alt:"Product Page Video Thumbnail", 
-                videoSrc:"videos/CulturedProduct.mp4#t=0.1", 
+                videoSrc:"videos/CulturedProduct.mp4#t=0.1",
+                mobileVideo: "videos/productMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "I edited the product pages to add dynamic and fully customisable blocks, and ensured responsiveness across screen sizes."
@@ -136,7 +146,8 @@ export function projectData() {
                 Heading: "Bespoke Parallax Image", 
                 imgSrc: "", 
                 alt:"", 
-                videoSrc:"videos/ForestWiseParallax.mp4#t=0.1", 
+                videoSrc:"videos/ForestWiseParallax.mp4#t=0.1",
+                mobileVideo: "videos/ARKIVEmobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "I wanted to use a full screen hero image that animated on scroll to give the home page interest and depth. Using Inkscape I created the image in multiple layers which could then be animated on scroll to create a parallax effect. To animate the layers I used the scroll interactions library 'ScrollMagic' and the JavaScript animations library 'GSAP'."
@@ -146,7 +157,8 @@ export function projectData() {
                 Heading: "Carosel", 
                 imgSrc: "", 
                 alt:"", 
-                videoSrc:"videos/ForestWiseCarosel.mp4#t=0.1", 
+                videoSrc:"videos/ForestWiseCarosel.mp4#t=0.1",
+                mobileVideo: "videos/ARKIVEmobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
                 Description: "I created an overlapping image carosel using javascript to navigate between cards."
@@ -190,7 +202,8 @@ export function projectData() {
                 Heading: "ARKIVE Headcare",  
                 imgSrc: "images/menuthumb.png", 
                 alt:"Mega Menu Video Thumbnail", 
-                videoSrc:"videos/ARKIVE.mp4#t=0.1", 
+                videoSrc:"videos/ARKIVE.mp4#t=0.1",
+                mobileVideo: "videos/ARKIVEmobile.mp4#t=0.1",
                 type:"video/mp4", 
                 media:"video",
                 secondaryBtn: true,
@@ -231,17 +244,17 @@ export function projectData() {
                 type:"", 
                 media:"image",
                 Description: "I used the email marketting platform Klaviyo to edit several email templates in order to properly integrate them with Shopify. This allowed the client to design their templates without needing developer assistence and export the code to Shopify where it dynamically input the data required for accurate order and shipping conformation emails."
-            },
-            {
-                Key: 3, 
-                Heading: "App installation",  
-                imgSrc: "images/ARApps.png", 
-                alt:"Gift wrapping option", 
-                videoSrc:"", 
-                type:"video/mp4", 
-                media:"image",
-                Description: "I installed and configured a selection of apps to add custom gift wrapping options to the cart page and improve GDPR compliance."
-            }
+             }
+            // {
+            //     Key: 3, 
+            //     Heading: "App installation",  
+            //     imgSrc: "images/ARApps.png", 
+            //     alt:"Gift wrapping option", 
+            //     videoSrc:"", 
+            //     type:"video/mp4", 
+            //     media:"image",
+            //     Description: "I installed and configured a selection of apps to add custom gift wrapping options to the cart page and improve GDPR compliance."
+            // }
         ];
     }
 }
