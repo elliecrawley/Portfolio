@@ -226,7 +226,8 @@ header svg{
 }
 
 .dropdownOpen{
-  height: (var(--vh, 1vh) * 40);
+  height: 40vh;
+  height: (var(--vh) * 40);
   border-bottom: var(--border);
   transition: all 0.5s ease-out;
 }
@@ -240,15 +241,16 @@ header svg{
 }
 
 .dropdownOpen ul{
-  height: 110px;
+  height: 30vh;
+  height: (var(--vh) * 30);
   visibility: visible;
-  transition: height 0.3s ease-out, visibility .1s;
+  transition: height 0.4s ease-out, visibility .1s;
 }
 
 .dropdownClosed ul{
   height: 0;
   visibility: hidden;
-  transition: height 0.3s ease-out, visibility .1s .3s;
+  transition: height 0.4s ease-out, visibility .1s .3s;
 }
 
 .dropdownClosed {
@@ -340,11 +342,11 @@ header svg, .menu-icon{
 
 .hero{
   background-color: var(--main-background-color);
-  height: calc(100vh - 60px);
-  height: calc((var(--vh, 1vh) * 100) - 60px);
+  height: calc(100vh - 80px);
+  height: calc((var(--vh) * 100) - 60px);
   display: grid;
-  grid-template-rows: calc(25vh - 30px) 40vh calc(25vh - 30px) 10vh;
-  grid-template-rows: calc((var(--vh, 1vh) * 25) - 30px) calc(var(--vh, 1vh) * 40) calc((var(--vh, 1vh) * 25) - 30px) calc(var(--vh, 1vh) * 10);
+  grid-template-rows: calc(25vh - 40px) 40vh calc(25vh - 40px) 10vh;
+  grid-template-rows: calc((var(--vh) * 25) - 30px) calc(var(--vh) * 40) calc((var(--vh) * 25) - 30px) calc(var(--vh) * 10);
   z-index: -1;
 }
 
@@ -363,7 +365,7 @@ header svg, .menu-icon{
   background-size: cover;
   background-attachment: fixed;
   background-position-x: -365px;
-  filter: opacity(0.5);
+  filter: opacity(0.7);
 }
 
 .herotext {
@@ -451,11 +453,12 @@ header svg, .menu-icon{
 }
 
 .btn-inner-wrapper {
-  height: calc(90vh - 60px);
+  height: calc(90vh - 80px);
+  height: calc((var(--vh) * 90) - 60px);
   display: flex;
   width: 80%;
-  margin: 0 0 10vh 0;
-  margin: 0 0 calc(var(--vh, 1vh) * 10) 0;
+  margin: 0 0 calc(10vh - 20px) 0;
+  margin: 0 0 calc(var(--vh) * 10) 0;
   padding: 0;
   border-bottom: var(--border);
   border-left: var(--border);
@@ -841,6 +844,11 @@ figure{
   font-size: 0.9em;
 }
 
+.tel{
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .contact-form{
   border-right: var(--border);
   z-index: 1;
@@ -1016,6 +1024,12 @@ input {
 }
 
 @media screen and (min-width: 700px){
+
+  .tel{
+    font-weight: normal;
+    cursor: auto;
+  }
+
   .submit-btn{
     height: 75px;
   }
@@ -1075,8 +1089,8 @@ label {
 
 .portfolio__hero-img{
   width: 100%;
-  height: calc(95vh - 50px);
-  height: calc((var(--vh, 1vh) * 95) - 50px);
+  height: calc(95vh - 70px);
+  height: calc((var(--vh) * 95) - 50px);
   object-fit: cover;
 }
 
@@ -1096,8 +1110,8 @@ label {
   position: relative;
   border-top: var(--border);
   border-right: var(--border);
-  height: calc(95vh - 50px);
-  height: calc((var(--vh, 1vh) * 95) - 50px);
+  height: calc(95vh - 70px);
+  height: calc((var(--vh) * 95) - 50px);
   display: flex;
   align-items: center;
   justify-content: center;
