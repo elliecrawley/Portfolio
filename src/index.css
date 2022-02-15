@@ -355,8 +355,14 @@ header svg, .menu-icon{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position-x: -365px;
+  background-position-x: -70vh;
   filter: opacity(0.7);
+}
+
+@media screen and (orientation: landscape) {
+  .hero-img{
+    background-position-x: left;
+  }
 }
 
 .herotext {
@@ -462,7 +468,7 @@ header svg, .menu-icon{
   width: 100%;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 425px){
 
   .hero-img{
     background-position-x: left;
@@ -674,6 +680,7 @@ section.portfolio{
 
 .portfolio-item {
   height: 50vh;
+  min-height: 350px;
   width: 100%;
   max-height: 500px;
   flex: 0 1 auto;
@@ -1281,6 +1288,7 @@ label {
   margin: 0 20px;
   padding-bottom: 25px;
   height: 50vh;
+  min-height: 400px;
   max-height: 500px;
 }
 
@@ -1357,8 +1365,6 @@ label {
 .portfolio-cta{
   height: 75px;
   width: 60vw;
-  border-bottom: var(--border);
-  border-top: none;
   background: none;
   font-family: var(--header-font);
   font-weight: 600;
@@ -1368,29 +1374,36 @@ label {
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin-left: auto;
+  margin: 0 0 0 calc(20vw - 20px);
   border-top: none;
   border-right: var(--border);
   border-bottom: var(--border);
   border-left: none;
+  box-sizing: border-box;
 }
 
 .portfolio-cta__inner-wrapper {
   background-color: var(--contrast-bg);
   margin-right: 20vw; 
+  box-sizing: border-box;
 }
 
 .portfolio-cta__outer-wrapper {
   background-color: var(--main-background-color);
+  box-sizing: border-box;
 }
 
 .portfolio-cta__inner-inner{
   margin-left: 20px;
-  border-top: var(--border);  
+  border-top: var(--border); 
+  box-sizing: border-box;
 }
 
 .portfolio-cta__inner-inner a{
-  font-size: 1.2em;  
+  font-size: 1.5em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 1024px){
@@ -1401,11 +1414,16 @@ label {
   .portfolio-cta__inner-inner{
     margin-left: 50px;
     border-top: var(--border);  
+    width: calc(75vw - 50px);
   }
 
   .portfolio-cta{
     height: 100px; 
-    font-size: 1.5em;  
+    font-size: 1em;
+    width: 50vw; 
+    margin: -3px 0 0 calc(25vw - 50px);
+    background-color: var(--contrast-bg);
+    border-top: var(--border);
   }
 }
 
