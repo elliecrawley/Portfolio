@@ -101,14 +101,6 @@ header a:hover, header a:focus, .hero a:hover, .side-bar a:focus, footer a:hover
   border-left: var(--border);
 }
 
-.hero-cta:hover{
-  border-bottom: var(--border);
-}
-
-.hero-cta:focus{
-  border-bottom: var(--border);
-}
-
 .hero-cta-link:focus{
   font-size: var(--enlarge-font);
 }
@@ -187,7 +179,7 @@ button, .submit-btn, a{
 .secondary-btn button{
   border: none;
   font-family: var(--header-font);
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   background-color: transparent;
   transition: all 0.3s;
@@ -345,8 +337,8 @@ header svg, .menu-icon{
   height: calc(100vh - 80px);
   height: calc((var(--vh) * 100) - 60px);
   display: grid;
-  grid-template-rows: calc(25vh - 40px) 40vh calc(25vh - 40px) 10vh;
-  grid-template-rows: calc((var(--vh) * 25) - 30px) calc(var(--vh) * 40) calc((var(--vh) * 25) - 30px) calc(var(--vh) * 10);
+  grid-template-rows: calc(20vh - 40px) 40vh calc(30vh - 40px) 10vh;
+  grid-template-rows: calc((var(--vh) * 20) - 30px) calc(var(--vh) * 40) calc((var(--vh) * 30) - 30px) calc(var(--vh) * 10);
   z-index: -1;
 }
 
@@ -384,7 +376,7 @@ header svg, .menu-icon{
 }
 
 .hero-headline{
-  font-size: 1.8em;
+  font-size: 2em;
   word-spacing: 10px;
   z-index: 1;
   font-weight: 300;
@@ -424,8 +416,8 @@ header svg, .menu-icon{
 }
 
 .hero-cta{
-  height: 50px;
-  width: 75%;
+  height: 75px;
+  width: 90%;
   margin-left: auto;
   display: block;
   border-bottom: none;
@@ -456,7 +448,7 @@ header svg, .menu-icon{
   height: calc(90vh - 80px);
   height: calc((var(--vh) * 90) - 60px);
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 0 calc(10vh - 20px) 0;
   margin: 0 0 calc(var(--vh) * 10) 0;
   padding: 0;
@@ -621,13 +613,13 @@ section.about {
 .section-title{
   padding: 50px 20px;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .about_body{
   margin: 0 0 0 20px;
   padding: 0 20px 50px 0;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
   border-bottom: var(--border);
 }
@@ -654,7 +646,6 @@ section.about {
 
 .about_body{
   padding: 0 50px 100px 0;
-  font-size: 1.1em;
   margin-left: 50px;
 }
 }
@@ -721,10 +712,10 @@ figure{
   padding-bottom: 25px;
   opacity: 0.8;
   padding: 0;
-  height: 50px;
+  height: 75px;
   bottom: 0;
   transition: all .5s ease;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .portfolio-text h3{
@@ -734,8 +725,8 @@ figure{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  font-size: 0.9em;
+  height: 75px;
+  font-size: 1em;
 }
 
 .View-more__container-inner .portfolio-text h3{
@@ -841,7 +832,7 @@ figure{
 .contact-text p {
   margin: 0;
   padding: 0 20px 50px 0;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 .tel{
@@ -873,7 +864,7 @@ label, .errorMessage {
 }
 
 #fname, #lname, #email {
-  height: 30px;
+  height: 50px;
   margin-right: 20px;
   text-indent: 20px;
 }
@@ -1165,6 +1156,10 @@ label {
   max-height: 500px;
 }
 
+.Portfolio__resp-txt{
+  font-size: 1.2em;
+}
+
 .Portfolio__resp-item-container{
   display: flex;
   grid-gap: 25px;
@@ -1344,8 +1339,8 @@ label {
 /*CTA*/
 
 .portfolio-cta{
-  height: 50px;
-  width: 50vw;
+  height: 75px;
+  width: 60vw;
   border-bottom: var(--border);
   border-top: none;
   background: none;
@@ -1366,7 +1361,7 @@ label {
 
 .portfolio-cta__inner-wrapper {
   background-color: var(--contrast-bg);
-  margin-right: 25vw; 
+  margin-right: 20vw; 
 }
 
 .portfolio-cta__outer-wrapper {
@@ -1376,6 +1371,10 @@ label {
 .portfolio-cta__inner-inner{
   margin-left: 20px;
   border-top: var(--border);  
+}
+
+.portfolio-cta__inner-inner a{
+  font-size: 1.2em;  
 }
 
 @media screen and (min-width: 1024px){
