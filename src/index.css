@@ -149,7 +149,6 @@ header a:hover, header a:focus, .hero a:hover, .side-bar a:focus, footer a:hover
 
 .projects-git-link:hover{
   font-weight: var(--increase-font-weight);
-  font-size: var(--enlarge-font);
   outline: none;
   }
 
@@ -796,6 +795,10 @@ figure{
     margin: 50px 0;
   }
 
+  .portfolio-text{
+    font-size: 1em;
+  }
+
   .portfolio-text h3{
     padding: 25px;
     margin: 0;
@@ -1152,12 +1155,19 @@ label {
   object-position: top;
 }
 
+video[poster]{
+  object-fit: contain;
+  min-height: 35vw;
+  background-color: var(--main-text-color);
+  object-position: center;
+}
+
 .Portfolio__resp-img{
   max-height: 500px;
 }
 
 .Portfolio__resp-txt{
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .Portfolio__resp-item-container{
@@ -1189,12 +1199,12 @@ label {
 }
 
 .projects-git-link{
-  height: 50px;
+  height: 100px;
   display: flex;
   margin: auto;
   text-align: center;
   font-size: 1em;
-  width: 50vw;
+  width: 60vw;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
@@ -1224,7 +1234,6 @@ label {
 @media screen and (min-width: 1024px){
 
   .projects-git-link{
-    height: 100px;
     font-size: 1.2em;
   }
 
@@ -1410,6 +1419,10 @@ footer{
 footer .footer-logo, footer .copyright, footer .social, footer .footer-logo-container footer p{
   width: auto;
   margin: 0;
+}
+
+.footer-logo{
+  font-weight: bold;
 }
 
 .footer-logo-container, .footer-nav-container {

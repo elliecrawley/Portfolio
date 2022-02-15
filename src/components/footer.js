@@ -11,7 +11,7 @@ const year = date.getFullYear();
   return (
 <footer>
     <div className="footer-logo-container">
-        <NavLink to="/#Home" className="footer-logo"><p>Ellie Crawley</p></NavLink>
+        <NavLink to="/#Home" className="footer-logo"><p>ELLIECRAWLEY</p></NavLink>
         <p className='copyright'> Copyright <FaCopyright/> {year} <nbsp/> All rights reserved</p>
     </div>
     <div className='footer-nav-container'>

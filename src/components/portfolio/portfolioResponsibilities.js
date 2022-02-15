@@ -21,9 +21,9 @@ projectData()
                             
                         }else{
                             if(secondaryBtn === true){
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" secondaryBtnClass="secondary-btn" href={href}/>
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" imgSrc={imgSrc} secondaryBtnClass="secondary-btn" href={href}/>
                             }else{
-                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" secondaryBtnClass="hidden"/>
+                                return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} type={type} imgClass="hidden" videoClass="Portfolio__resp-img" imgSrc={imgSrc} secondaryBtnClass="hidden"/>
                             }
                         }
                     }

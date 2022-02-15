@@ -15,7 +15,7 @@ const PortfolioHeading = () => {
                     <PortfolioItems heading='WineSpark' text="Shopify store created for WineSpark, a UK based wine subscription service." languages="Liquid, JavaScript, HTML5, CSS3" classHidden="hidden" src='images/WineSparkthumbnail.jpg' alt="WineSpark Homepage"/>
                 </Link>
                 <Link to="/Cultured-Biomecare" className="portfolio-item" aria-label="Link to 'Cultured Biomecare' project page">
-                    <PortfolioItems heading='Cultured Biomecare' text="Shopify store created for Cultured Biomecare, an award-winning UK based skin care brand." languages="Liquid, JavaScript, HTML5, CSS3" src='images/Culturedthumbnail.png' alt="Cultured Biomecare Homepage"/>
+                    <PortfolioItems heading='Cultured Biomecare' text="Shopify store created for Cultured Biomecare, an award-winning UK based skin care brand." languages="Liquid, JavaScript, HTML5, CSS3" classHidden="hidden" src='images/Culturedthumbnail.png' alt="Cultured Biomecare Homepage"/>
                 </Link>
                 <Link to="/Avery-Row" className="portfolio-item" aria-label="Link to 'Avery Row' project page">
                     <PortfolioItems heading='Avery Row' text="Shopify store created for Avery Row, an independent British brand specialising in organic, natural textiles and accessories for children." languages="JavaScript, HTML5, CSS3, Liquid" programmes="Klaviyo" src='images/AveryRowThumbnail.png' alt="Avery Row Homepage"/>
