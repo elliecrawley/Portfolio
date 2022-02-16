@@ -27,13 +27,13 @@ export function projectData() {
             {
                 Key: 3, 
                 Heading: "Text Highlighter",  
-                imgSrc: "images/linetrackerthumb.png", 
+                imgSrc: "images/highlightMobile.png", 
                 alt:"Text Highlighter Thumbnail", 
                 videoSrc:"videos/highlighter.mp4#t=0.1", 
-                mobileVideo: "videos/highlighter.mp4#t=0.1",
+                mobileVideo: "",
                 type:"video/mp4", 
-                media:"video",
-                Description: "Highlighting text can make reading easier by helping users to track their place on the page and to maintain focus when reading long pararaphs. This tool allows users to select the colour and brightness level of the highlight, and to either track the text line by line using the mouse/trackpad or sentence by sentence using the 'd' key to move forwards and the 'w' key to move back. The tool is able to detect sentences that end with question marks, exclamation marks, and full stops, without breaking the sentence when it encounters periods in initials, acronyms, title, and other common uses."
+                media:"videoDimageM",
+                Description: "Highlighting text can make reading easier by helping users to track their place on the page and to maintain focus when reading long pararaphs. This tool allows users to select the colour and brightness level of the highlight, and to either track the text line by line using the mouse/trackpad or sentence by sentence using the 'd' key to move forwards and the 'w' key to move back. The tool is able to detect sentences that end with question marks, exclamation marks, and full stops, without breaking the sentence when it encounters periods in initials, acronyms, title, and other common uses. This feature is currently only available for desktop."
             }, 
             {
                 Key: 4, 

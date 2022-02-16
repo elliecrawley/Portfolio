@@ -18,13 +18,15 @@ projectData()
                                 return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} imgSrc={imgSrc} alt={alt} imgClass="Portfolio__resp-img" videoMobileClass="hidden" videoDesktopClass="hidden" secondaryBtnClass="hidden"/>
                             }
                             
-                        }else{
+                        }else if(media === "video"){
                             if(secondaryBtn === true){
 
                                 return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} videoMobile={mobileVideo} type={type} imgClass="hidden" videoMobileClass="Portfolio__resp-img hidden-desktop" videoDesktopClass="Portfolio__resp-img hidden-mobile" secondaryBtnClass="secondary-btn" href={href}/>
                             }else{
                                 return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} videoMobile={mobileVideo} type={type} imgClass="hidden" videoMobileClass="Portfolio__resp-img hidden-desktop" videoDesktopClass="Portfolio__resp-img hidden-mobile" secondaryBtnClass="hidden"/>
                             }
+                        }else if(media === "videoDimageM"){
+                            return <PortfolioRespItems key={Key} Heading={Heading} Description={Description} videoSrc={videoSrc} imgSrc={imgSrc} videoMobileClass="hidden" type={type} imgClass="Portfolio__resp-img hidden-desktop" videoDesktopClass="Portfolio__resp-img hidden-mobile" secondaryBtnClass="hidden"/>
                         }
                     }
                     )}           

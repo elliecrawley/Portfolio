@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
 import { useState } from "react";
@@ -11,7 +11,7 @@ const Header = () => {
         setDropdown(!dropdown)
     }
 
-    const clickAway = () => {
+    const clickAway = (event) => {
         if(dropdown === true){
             setDropdown(false)
         }
@@ -27,7 +27,7 @@ const Header = () => {
         <>
         <header className="header" id="Home">
             <Link to="/" className="logo"><p>ELLIECRAWLEY</p></Link>
-            <button aria-label="Toggle dropdown menu" className="menu-icon" onClick={dropdownMenu} onBlur={clickAway}><FaBars/></button>
+            <button aria-label="Toggle dropdown menu" className="menu-icon" onClick={dropdownMenu} onBlur={clickAway}>{dropdown ? <AiOutlineClose/> : <AiOutlineMenu/> }</button>
             <nav className="menu-items contrast-text-color">
                 <ul>
                     <NavLink to="/#AboutText"><li>About</li></NavLink>
@@ -37,7 +37,7 @@ const Header = () => {
             </nav>
         </header>
         <nav className={dropdown ? "dropdown dropdownOpen" : "dropdown dropdownClosed" }>
-            <ul>
+            <ul className="dropDownUL">
                 <NavLink to="/#AboutText" onFocus={focus} onClick={dropdownMenu}><li>About</li></NavLink>
                 <NavLink to="/#Portfolio" onFocus={focus} onClick={dropdownMenu}><li>Portfolio</li></NavLink>
                 <NavLink to="/#Contact" onFocus={focus} onClick={dropdownMenu}><li>Contact</li></NavLink>

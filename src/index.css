@@ -220,7 +220,7 @@ header svg{
   height: 40vh;
   height: (var(--vh) * 40);
   border-bottom: var(--border);
-  transition: all 0.5s ease-out;
+  transition: all .5s;
 }
 
 .dropdownClosed ul, .dropdownOpen ul{
@@ -235,13 +235,13 @@ header svg{
   height: 30vh;
   height: (var(--vh) * 30);
   visibility: visible;
-  transition: height 0.4s ease-out, visibility .1s;
+  transition: height .5s ease, visibility 0.1s ease;
 }
 
 .dropdownClosed ul{
   height: 0;
   visibility: hidden;
-  transition: height 0.4s ease-out, visibility .1s .3s;
+  transition: height 0.5s ease, visibility .1s .4s;
 }
 
 .dropdownClosed {
@@ -861,16 +861,18 @@ form{
   row-gap: 25px;
 }
 
-label, .errorMessage {
+label{
   color: var(--main-text-color);
-  font-size: 0.9em;
+  font-size: 1.1em;
   font-weight: 400;
   font-family: var(--body-font);
 }
 
 .errorMessage {
   font-size: 1.1em;
-  color: #f44336;
+  color: var(--glow);
+  font-weight: 400;
+  font-family: var(--body-font);
 }
 
 #fname, #lname, #email {
@@ -916,7 +918,7 @@ input {
   border-left: var(--border);
   border-bottom: var(--border);
   box-sizing: content-box;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .lightbulb-wrapper{
@@ -1075,6 +1077,7 @@ label {
 
 .submit-wrapper{
   margin-top: 50px;
+  font-size: 1.5em;
 }
 
 .lightbulb-wrapper svg{
@@ -1400,13 +1403,18 @@ label {
 }
 
 .portfolio-cta__inner-inner a{
-  font-size: 1.5em;
+  font-size: 1em;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 @media screen and (min-width: 1024px){
+
+  .portfolio-cta__inner-inner a{
+    font-size: 1.5em;
+  }
+
   .portfolio-cta__inner-wrapper {
     margin-right: 25vw;
   }
