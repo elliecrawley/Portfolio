@@ -9,7 +9,7 @@ const PortfolioHeading = () => {
             <SectionTitle text="Portfolio"/>
             <div className="portfolio-item-wrapper">
                 <Link to="/Emily-Carter" className="portfolio-item" aria-label="Link to 'Emily Carter' project page">
-                    <PortfolioItems heading='Emily Carter' text="Shopify store created for Emily Carter, an award-winning British designer specialising in hand illustrated silk accessories, stationery and furnishings." classHidden="hidden" languages="Liquid, JavaScript, AJAX, HTML5, CSS3" src='images/ECthumbnail.png' alt="Emily Carter Homepage"/>
+                    <PortfolioItems heading='Emily Carter' text="Shopify store created for Emily Carter, an award-winning British designer specialising in hand illustrated silk accessories, stationery and furnishings." classHidden="hidden" languages="Liquid, JavaScript, HTML5, CSS3" src='images/ECthumbnail.png' alt="Emily Carter Homepage"/>
                 </Link>
                 <Link to="/WineSpark" className="portfolio-item" aria-label="Link to 'WineSpark' project page">
                     <PortfolioItems heading='WineSpark' text="Shopify store created for WineSpark, a UK based wine subscription service." languages="Liquid, JavaScript, HTML5, CSS3" classHidden="hidden" src='images/WineSparkthumbnail.jpg' alt="WineSpark Homepage"/>

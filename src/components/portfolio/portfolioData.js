@@ -69,7 +69,7 @@ export function projectData() {
                 mobileVideo: "videos/galleryMobile.mp4#t=0.1", 
                 type:"video/mp4", 
                 media:"video", 
-                Description: "I created two gallery pages to show-case the illustrations and patterns used in the products. The gallery has two layout styles - masonry and grid  - which can be easily switched between from the customiser. The masonry gallery supports as many images as required and the images run horizonatlly allowing them to be easily paired in the desired way."
+                Description: "I created two gallery pages to show-case the illustrations and patterns used in the products. The gallery has two layout styles - masonry and grid  - which can be easily switched between from the customiser. The masonry gallery supports as many images as required and the images run horizontally allowing them to be easily paired in the desired way."
             }, 
             {
                 Key: 3, 

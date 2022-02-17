@@ -6,6 +6,8 @@ import ContactText from "./contact/contactText";
 import ContactForm from "./contact/contactForm";
 
 const Index = () => {
+
+  document.title = "Ellie Crawley"
   return <>
         <section className="hero">  
           <HeroSection/>  

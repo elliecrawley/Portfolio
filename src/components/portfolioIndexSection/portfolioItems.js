@@ -14,7 +14,6 @@ const PortfolioItems = ({heading, text, languages, programmes, src, alt, classHi
           const [entry] = entries;
           if(entry.isIntersecting){
             setAddClass("figure-shadow")
-            console.log(entry.isIntersecting)
           }
         }
       
