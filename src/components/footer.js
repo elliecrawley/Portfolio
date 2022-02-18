@@ -17,9 +17,9 @@ const year = date.getFullYear();
     <div className='footer-nav-container'>
         <nav className="menu-items contrast-text-color">
             <ul>
-                <NavLink to="/#AboutText"><li>About</li></NavLink>
-                <NavLink to="/#Portfolio"><li>Portfolio</li></NavLink>
-                <NavLink to="/#Contact"><li>Contact</li></NavLink>
+               <li><NavLink to="/#AboutText">About</NavLink></li>
+                <li><NavLink to="/#Portfolio">Portfolio</NavLink></li>
+                <li><NavLink to="/#Contact">Contact</NavLink></li>
             </ul>
         </nav>
         <div className='social'>
