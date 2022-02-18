@@ -15,11 +15,14 @@ const Button = ({wrapper_outer, wrapper_inner, wrapper_inner_inner, btn_class, t
             <div className={wrapper_inner}>
                 <div className={wrapper_inner_inner}>
                     <a aria-label="Link to Live Site" href={link} className={ctaLink} onClick={preventNewWindow} target={openWindow ?  "_blank" : "_self"} rel="noreferrer">
-                        <button className={btn_class}>{text}</button>
+                        {text}
                     </a>
-                    <a aria-label="Link to code on GItHub" href={git_href} className={git_link} onClick={preventNewWindow} target={openWindow ?  "_blank" : "_self"} rel="noreferrer">
-                        <button className={git_btn}>View GitHub repository</button>
+                    <div className={git_link}>
+                    <a aria-label="Link to code on GItHub" href={git_href} className={git_btn} onClick={preventNewWindow} target={openWindow ?  "_blank" : "_self"} rel="noreferrer">
+                        View GitHub repository
                     </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>

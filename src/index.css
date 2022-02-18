@@ -75,7 +75,7 @@ a:focus, button:focus{
   color: var(--btn-hover);
 }
 
-header a:hover, header a:focus, .hero a:hover, .side-bar a:focus, footer a:hover, footer a:focus{
+header a:hover, header a:focus, .side-bar a:hover, .side-bar a:focus, footer a:hover, footer a:focus{
   transform: scale(1.1);
   font-weight: var(--increase-font-weight);
 }
@@ -90,11 +90,18 @@ header a:hover, header a:focus, .hero a:hover, .side-bar a:focus, footer a:hover
   cursor: pointer;
 }
 
-.hero-cta:hover, .submit-btn:hover, .portfolio-cta:hover, .hero-cta:focus, .submit-btn:focus, .portfolio-cta:focus, .git-cta:hover, .git-cta:focus{
+.submit-btn:hover, .portfolio-cta:hover, .submit-btn:focus, .portfolio-cta:focus, .git-cta:hover, .git-cta:focus{
   background-color: var(--btn-hover);
   font-size: var(--enlarge-font);
   outline: none;
   cursor: pointer;
+}
+
+.hero-cta:hover,  .hero-cta:focus{
+  background-color: var(--btn-hover);
+  font-size: var(--enlarge-font);
+  outline: none;
+  cursor: pointer;  
 }
 
 .hero-cta:hover, .portfolio-cta:hover, .hero-cta:focus, .portfolio-cta:focus{
@@ -103,10 +110,6 @@ header a:hover, header a:focus, .hero a:hover, .side-bar a:focus, footer a:hover
 
 .git-cta:hover, .git-cta:focus{
   border-right: var(--border);
-}
-
-.hero-cta-link:focus{
-  font-size: var(--enlarge-font);
 }
 
 .submit-btn:hover, .submit-btn:focus{
@@ -176,17 +179,9 @@ button, .submit-btn, a{
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-  font-size: 0.9em;
-}
-
-.secondary-btn button{
-  border: none;
-  font-family: var(--header-font);
   font-size: 1em;
   font-weight: bold;
-  background-color: transparent;
-  transition: all 0.3s;
-  color: var(--main-text-color);
+  font-family: var(--header-font);
 }
 
 @media screen and (min-width: 1100px) {
@@ -428,7 +423,6 @@ header svg, .menu-icon{
   height: 75px;
   width: 90%;
   margin-left: auto;
-  display: block;
   border-bottom: none;
   border-right: var(--border);
   border-top: var(--border);
@@ -441,6 +435,10 @@ header svg, .menu-icon{
   background-color: rgba(255,255,255,.5);
   backdrop-filter: blur(5px);
   z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .hero-cta-wrapper{
@@ -568,10 +566,6 @@ header svg, .menu-icon{
   filter: none;
 }
 
-.hero-cta{
-  height: 75px;
-}
-
 .hero-cta-wrapper{
   grid-column: 2;
   grid-row: 1/span 3;
@@ -588,10 +582,11 @@ header svg, .menu-icon{
   border-left: 3px solid var(--border);
   margin-left: -3px; 
   margin-bottom: 0;
+  font-size: 1.5em;
 }
 
 .btn-inner-wrapper a {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .btn-inner-wrapper button {
@@ -1160,7 +1155,6 @@ label {
   height: calc(95vh - 70px);
   height: calc((var(--vh) * 95) - 50px);
   object-fit: cover;
-  position: fixed;
 }
 
 .portfolio__hero-txt{
@@ -1448,6 +1442,7 @@ label {
 /*CTA*/
 
 .portfolio-cta, .git-cta{
+  text-align: center;
   height: 75px;
   width: 60vw;
   font-family: var(--header-font);
@@ -1458,7 +1453,7 @@ label {
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 0 0 0 calc(20vw - 20px);
+  margin: 0 0 0 auto;
   box-sizing: border-box;
   border-top: none;
 }
@@ -1492,20 +1487,11 @@ label {
   margin-left: 20px;
   border-top: var(--border); 
   box-sizing: border-box;
-}
-
-.portfolio-cta__inner-inner a{
   font-size: 1em;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 @media screen and (min-width: 1024px){
 
-  .portfolio-cta__inner-inner a{
-    font-size: 1.5em;
-  }
 
   .portfolio-cta__inner-wrapper {
     margin-right: 25vw;
@@ -1515,6 +1501,8 @@ label {
     margin-left: 50px;
     border-top: var(--border);  
     width: calc(75vw - 50px);
+    font-size: 1.5em;
+
   }
 
   .portfolio-cta, .git-cta{

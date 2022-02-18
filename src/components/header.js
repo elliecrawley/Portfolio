@@ -30,17 +30,17 @@ const Header = () => {
             <button aria-label="Toggle dropdown menu" className="menu-icon" onClick={dropdownMenu} onBlur={clickAway}>{dropdown ? <AiOutlineClose/> : <AiOutlineMenu/> }</button>
             <nav className="menu-items contrast-text-color">
                 <ul>
-                    <NavLink to="/#AboutText"><li>About</li></NavLink>
-                    <NavLink to="/#Portfolio"><li>Portfolio</li></NavLink>
-                    <NavLink to="/#Contact"><li>Contact</li></NavLink>
+                    <li><NavLink to="/#AboutText">About</NavLink></li>
+                    <li><NavLink to="/#Portfolio">Portfolio</NavLink></li>
+                    <li><NavLink to="/#Contact">Contact</NavLink></li>
                 </ul>
             </nav>
         </header>
         <nav className={dropdown ? "dropdown dropdownOpen" : "dropdown dropdownClosed" }>
             <ul className="dropDownUL">
-                <NavLink to="/#AboutText" onFocus={focus} onClick={dropdownMenu}><li>About</li></NavLink>
-                <NavLink to="/#Portfolio" onFocus={focus} onClick={dropdownMenu}><li>Portfolio</li></NavLink>
-                <NavLink to="/#Contact" onFocus={focus} onClick={dropdownMenu}><li>Contact</li></NavLink>
+                <li><NavLink to="/#AboutText" onFocus={focus} onClick={dropdownMenu}>About</NavLink></li>
+                <li><NavLink to="/#Portfolio" onFocus={focus} onClick={dropdownMenu}>Portfolio</NavLink></li>
+                <li><NavLink to="/#Contact" onFocus={focus} onClick={dropdownMenu}>Contact</NavLink></li>
             </ul>
         </nav>
         </>
