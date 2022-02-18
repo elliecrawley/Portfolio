@@ -1150,11 +1150,15 @@ label {
 
 /*Hero section*/
 
-.portfolio__hero-img{
+.portfolio__hero-img-mobile, .portfolio__hero-img-desktop{
   width: 100%;
   height: calc(95vh - 70px);
   height: calc((var(--vh) * 95) - 50px);
   object-fit: cover;
+}
+
+.portfolio__hero-img-desktop{
+  display: none;
 }
 
 .portfolio__hero-txt{
@@ -1180,10 +1184,22 @@ label {
   justify-content: center;
 }
 
+@media screen and (min-width: 500px){
+
+  .portfolio__hero-img-mobile{
+    display: none;
+  }
+
+  .portfolio__hero-img-desktop{
+    display: block;
+  }
+}
+
 @media screen and (min-width: 768px){
   .portfolio__hero-txt{
     font-size: 3rem;
   }
+
 }
 
 /*About*/
