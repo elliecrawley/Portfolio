@@ -5,7 +5,7 @@ const HeroImage = () => {
     return (
         <> 
             <div className="hero-img hero-img-mobile" alt="Ellie Crawley"/>
-            <img className="hero-img hero-img-desktop" src={PortPic}/>
+            <img className="hero-img hero-img-desktop" src={PortPic} alt="Ellie Crawley"/>
         </>
     )
 }
