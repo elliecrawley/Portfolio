@@ -172,7 +172,7 @@ export function projectData() {
                             videoSrcMobile: "", 
                             type:"video/mp4", 
                             media:"videoDimageM",
-                            Description: "I designed and created the 'about' page by building dynamic content blocks which can be edited or reordered from the customiser. I designed this page with warm greyscale colours and image rich content blocks to follow the clients brand identity."
+                            Description: "I designed and created the page 'What is KOKO, and Why?' by building dynamic content blocks which can be edited or reordered from the customiser. I designed this page with warm greyscale colours and image rich content blocks to follow the client's brand identity."
                         },
                         {
                             Key: 2, 
@@ -184,7 +184,7 @@ export function projectData() {
                             videoSrcMobile: "", 
                             type:"video/mp4", 
                             media:"videoDimageM",
-                            Description: "I designed and created the 'KOKO = ECO' page to showcase the clients commitment to social and environmental justice in their business model. I contributed to the content of this page by researching the manufacturers of the clothing, as well as the requirements for GOTS certfification, OEKO-TEX Standard 100, and PETA certification. I created this page by building dynamic content blocks which can be edited or reordered from the customiser, and supplementing the clients image assets with appropriate images sourced from stock photo sites."
+                            Description: "I designed and created the 'KOKO = ECO' page to showcase the client's commitment to social and environmental justice in their business model. I contributed to the content of this page by researching the manufacturers of the clothing sold by the client, as well as the requirements for certification with GOTS, OEKO-TEX Standard 100, and PETA. I created this page by building dynamic content blocks which can be edited or reordered from the customiser, and supplementing the client's image assets with appropriate images sourced from stock photo sites."
                         }, 
                         {
                             Key: 3, 
@@ -192,10 +192,10 @@ export function projectData() {
                             imgSrcMobile: KOKOfaqMobile,
                             imgSrcDesktop: KOKOfaqDesktop,  
                             alt:"KOKO FAQ page", 
-                           videoSrcDesktop:"", 
+                            videoSrcDesktop:"", 
                             type:"video/mp4", 
                             media:"image",
-                            Description: "In designed this FAQ page I decided to seperate the text rich content into sections that would allow users to easily find the desired information. I generated the content for this page using information from other pages, as well as research from sources such as the clothing manufacturer's website; the FairWear Foundation; the official websites for GOTS, OEKO-TEX Standard 100, and PETA certification; and the Delivery and Returns section of the 'Print on Demand' company used by the client."
+                            Description: "In designing this FAQ page I decided to seperate the text rich content into sections that would allow users to easily find the desired information. I generated the content for this page using information from other pages, as well as research from sources such as the clothing manufacturer's website; the FairWear Foundation; the official websites for GOTS, OEKO-TEX Standard 100, and PETA certification; and the Delivery and Returns section of the 'Print on Demand' company used by the client."
                         }, 
                         {
                             Key: 4, 
@@ -206,7 +206,7 @@ export function projectData() {
                            videoSrcDesktop:"", 
                             type:"video/mp4", 
                             media:"image",
-                            Description: "I generated and styled the 'Refund' and 'Terms of Service' pages, and created a dedicated 'Shipping and Returns' page to present a summary of the key information in a more accessible way. To generated the content for this page I researched the Delivery and Returns policies of the 'Print on Demand' company used by the client."
+                            Description: "I generated and styled the 'Refund' and 'Terms of Service' pages, and created a dedicated 'Shipping and Returns' page to present a summary of the key information in a more accessible way. To generate the content for this page I researched the Delivery and Returns policies of the 'Print on Demand' company used by the client."
                         }
                     ]
     // } else if (window.location.pathname === "/ForestWise"){
@@ -281,7 +281,7 @@ export function projectData() {
                 media:"image",
                 secondaryBtn: false,
                 href:"",
-                Description: "I added additional text boxes to the cart page for customers to enter specific delivery requirements as well as a contact telephone number. This information is viewable by the client from their admin panel and also passes through directly to the packing slips generated by the clients order printing app."
+                Description: "I added additional text boxes to the cart page for customers to enter specific delivery requirements as well as a contact telephone number. This information is viewable by the client from their admin panel and also passes through directly to the packing slips generated by the client's order printing app."
             },
             {
                 Key: 3, 
@@ -295,7 +295,7 @@ export function projectData() {
                 media:"image",
                 secondaryBtn: false,
                 href:"",
-                Description: "I helped to create the clients Christmas email campaign by working with the email marketing platform Mailchimp. I edited the clients newsletter template to include their seasonal products and Christmas delivery information, as well as generating and including a seasonal discount code."
+                Description: "I helped to create the client's Christmas email campaign by working with the email marketing platform Mailchimp. I edited the client's newsletter template to include their seasonal products and Christmas delivery information, as well as generating and including a seasonal discount code."
             }
         ];
     } else if (window.location.pathname === "/Camel-Ski-School"){
@@ -340,7 +340,7 @@ export function projectData() {
                     media:"image",
                     secondaryBtn: false,
                     href:"",
-                    Description: "I created a simple grid style gallery to showcase the clients amazing lifestyle photos."
+                    Description: "I created a simple grid style gallery to showcase the client's amazing lifestyle photos."
                 }
             ];
     } else if (window.location.pathname === "/Avery-Row"){

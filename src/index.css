@@ -478,14 +478,16 @@ header svg, .menu-icon{
     background-position: center;
     background-color: var(--contrast-text-color);
   }
+
+  .herotext{
+    height: 30vh;
+  }
 }
 
 @media screen and (orientation: landscape) and (min-width: 600px){
 
   .hero{
-    height: calc(100vh - 50px);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60vh calc(40vh - 50px);
   }
 
   .herotext {
@@ -498,12 +500,10 @@ header svg, .menu-icon{
     backdrop-filter: none;
     background-color: transparent;
     padding: 0;
-    height: 40vh;
     margin: 0px 0 0 10%;
   }
   
   .hero-headline{
-    font-size: 1.5em;
     padding: 30px 0 0 0;
     width: fit-content;
     height: fit-content;
@@ -530,7 +530,6 @@ header svg, .menu-icon{
     border-top: var(--border);
     border-right: var(--border);
     width: 50vw;
-    height: calc(100vh - 50px);
   }
 
   .hero-img-desktop{
@@ -550,7 +549,6 @@ header svg, .menu-icon{
     border-top: var(--border);
     border-right: none;
     box-sizing: border-box;
-    margin-bottom: 30px;
   }
   
   .btn-inner-wrapper {
@@ -578,10 +576,59 @@ header svg, .menu-icon{
   .btn-inner-wrapper div{
     font-size: 1em;
   }
+ 
+}
+
+
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-height: 500px){
+  .hero{
+    height:150vh;
+    grid-template-rows: 100vh 150vh;
+  }
+
+  .hero-cta-wrapper{
+    height: calc(150vh - 50px);
+  }
+
+  .herotext {
+    height: calc(100vh - 100px);
+  }
+  
+  .hero-headline{
+    font-size: 3em;
+  }
+  
+  .hero-img{
+    height: 150vh;
+  }
 
 }
 
-@media screen and (min-width: 1024px) and (min-height: 500px){
+@media screen and (orientation: landscape) and (min-width: 600px) and (min-height: 501px){
+
+  .hero{
+    height: calc(100vh - 50px);
+    grid-template-rows: 60vh calc(40vh - 50px);
+  }
+
+  .herotext {
+    height: 40vh;
+  }
+  
+  .hero-cta-wrapper{
+    height: calc(150vh - 30px);
+  }
+
+  .hero-headline{
+    font-size: 2em;
+  }
+
+  .hero-img{
+    height: calc(100vh - 50px);
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 501px){
 
   .hero{
     grid-template-columns: 50px 1fr 1fr 50px;
@@ -625,6 +672,7 @@ header svg, .menu-icon{
   .hero-cta-wrapper{
     grid-column: 2;
     margin-bottom: 50px;
+    height: auto;
   }
 
   .hero-cta{
@@ -1238,7 +1286,7 @@ label {
   font-size: 2rem;
   margin: 0;
   background-color: rgba(255,255,255,0.8);
-  padding: 100px 50px;
+  padding: 50px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -1271,6 +1319,10 @@ label {
 @media screen and (min-width: 768px){
   .portfolio__hero-txt{
     font-size: 3rem;
+  }
+
+  .portfolio__hero-txt{
+    padding: 100px 50px;
   }
 
 }

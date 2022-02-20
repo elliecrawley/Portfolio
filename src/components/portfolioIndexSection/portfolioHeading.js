@@ -17,7 +17,7 @@ const PortfolioHeading = () => {
                 <Link to="/Emily-Carter" className="portfolio-item" aria-label="Link to 'Emily Carter' project page">
                     <PortfolioItems 
                         heading='Emily Carter' 
-                        text="Shopify store created for Emily Carter, an award-winning British designer specialising in hand illustrated silk accessories, stationery and furnishings." 
+                        text="Shopify store created for Emily Carter, an award-winning British designer specialising in hand illustrated silk accessories, stationery, and furnishings." 
                         classHidden="hidden" 
                         languages="Liquid, JavaScript, HTML5, CSS3" 
                         src = {ECthumbnail} 
@@ -37,7 +37,7 @@ const PortfolioHeading = () => {
                 <Link to="/Avery-Row" className="portfolio-item" aria-label="Link to 'Avery Row' project page">
                     <PortfolioItems 
                         heading='Avery Row' 
-                        text="Shopify store created for Avery Row, an independent British brand specialising in organic, natural textiles and accessories for children." 
+                        text="Shopify store created for Avery Row, an independent British brand specialising in organic textiles and accessories for children." 
                         languages="JavaScript, HTML5, CSS3, Liquid" 
                         programmes="Klaviyo" 
                         src={AveryRowthumbnail}
