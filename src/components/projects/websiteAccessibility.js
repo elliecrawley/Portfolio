@@ -6,7 +6,7 @@ import Button from "../button";
 import React from "react";
 
 const WebsiteAccessibility = () => {
-    document.title = "Website Accessibility Tool";
+    document.title = "Accessibility Tool";
 
     React.useEffect(()=>{
         window.scrollTo(0,0);

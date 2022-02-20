@@ -1,7 +1,7 @@
 import ButtonSecondary from "../buttonSecondary"
 import React, {useState, useRef, useMemo, useEffect} from "react";
 
-const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, imgClass, videoMobileClass, videoDesktopClass, videoMobile, secondaryBtnClass, href}) => {
+const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDesktop, imgSrcMobile, alt, Heading, Description, imgMobileClass, imgDesktopClass, videoMobileClass, videoDesktopClass, secondaryBtnClass, href}) => {
 
         const targetRef = useRef(null);
         const [addClass, setAddClass] = useState("Portfolio__resp-item-container");
@@ -36,12 +36,13 @@ const PortfolioRespItems = ({videoSrc, type, imgSrc, alt, Heading, Description, 
 
         <div className={addClass} ref={targetRef}>
             <video className={videoDesktopClass} height="auto" controls preload="metadata">
-                <source src={videoSrc} type={type}/>
+                <source src={videoSrcDesktop} type={type}/>
             </video>   
             <video className={videoMobileClass} height="auto" controls preload="metadata">
-                <source src={videoMobile} type={type}/>
+                <source src={videoSrcMobile} type={type}/>
             </video>       
-            <img className={imgClass} src={imgSrc} alt={alt}/>
+            <img className={imgDesktopClass} src={imgSrcDesktop} alt={alt}/>
+            <img className={imgMobileClass} src={imgSrcMobile} alt={alt}/>
             <div className="Portfolio__resp-txt">
                 <h3>{Heading}</h3>
                 <p>{Description}</p>

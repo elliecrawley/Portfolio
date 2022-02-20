@@ -10,10 +10,10 @@ import Index from "./components";
 //Portfolio
 import WebsiteAccessibility from "./components/projects/websiteAccessibility";
 import EmilyCarter from "./components/projects/emilyCarter";
-import WineSpark from "./components/projects/wineSpark";
-import CulturedBiomecare from "./components/projects/culturedBiomecare";
-//import ForestWise from "./components/projects/project5";
-import SmallerProjects from "./components/projects/smallerProjects";
+//import ForestWise from "./components/projects/ForestWise";
+import KOKO from "./components/projects/KOKO";
+import Yolly from "./components/projects/yolly";
+import CamelSkiSchool from "./components/projects/camelSkiSchool";
 import AveryRow from "./components/projects/averyRow";
 
 //footer
@@ -38,20 +38,17 @@ function App() {
       <Route path="/Emily-Carter">
           <EmilyCarter/>
       </Route>
-      <Route path="/WineSpark">
-          <WineSpark/>      
+      <Route path="/KOKO">   
+          <KOKO/>   
       </Route>
-      <Route path="/Cultured-Biomecare">       
-          <CulturedBiomecare/>    
-      </Route>
-      {/* <Route path="/ForestWise">   
-          <ForestWise/>   
-      </Route> */}
       <Route path="/Avery-Row">   
           <AveryRow/>   
       </Route>
-      <Route path="/Smaller-Projects">  
-          <SmallerProjects/>  
+      <Route path="/Camel-Ski-School">  
+          <CamelSkiSchool/>  
+      </Route>
+      <Route path="/Yolly">  
+          <Yolly/>  
       </Route>
       <Route path="/404"/>
           <PageNotFound/>
