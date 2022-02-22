@@ -1,5 +1,5 @@
 import React from "react"
-import PortPic from "../../assets/images/PortPic.webp"
+import PortPic from "../../assets/images/PortPicDesktop.webp"
 
 const HeroImage = () => {
     return (
