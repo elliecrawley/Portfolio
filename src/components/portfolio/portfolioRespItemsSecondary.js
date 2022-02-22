@@ -1,4 +1,5 @@
-import React, {useState, useRef, useMemo, useEffect} from "react";
+import React, {useState, useRef, useMemo, useEffect, Suspense} from "react";
+const ButtonSecondary = React.lazy(() => import( "../buttonSecondary"))
 
 const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDesktop, imgSrcMobile, alt, Heading, Description, imgMobileClass, imgDesktopClass, videoMobileClass, videoDesktopClass, href}) => {
 
@@ -45,6 +46,9 @@ const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDeskto
             <div className="Portfolio__resp-txt">
                 <h3>{Heading}</h3>
                 <p>{Description}</p>
+                <Suspense fallback={<div>Loading...</div>}>
+                  <ButtonSecondary secondaryBtnClass="secondary-btn" href={href}/>
+                </Suspense>
             </div>
         </div>
     )

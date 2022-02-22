@@ -352,7 +352,7 @@ header svg, .menu-icon{
 }
 
 .hero-img-mobile{
-  background-image: url(./assets/images/PortPic.png);
+  background-image: url(./assets/images/PortPicMobile.webp);
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -616,7 +616,7 @@ header svg, .menu-icon{
   }
   
   .hero-cta-wrapper{
-    height: calc(150vh - 30px);
+    height: calc(100vh - 110px);
   }
 
   .hero-headline{

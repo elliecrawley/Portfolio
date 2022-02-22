@@ -1,7 +1,9 @@
-import PortfolioItems from './portfolioIndexSection/portfolioItems';
-import React from 'react'
+import React, { Suspense } from 'react';
+
 import { Link } from "react-router-dom";
 import { thumbnailData, thumbnail_details } from './thumbnailData';
+
+const PortfolioItems = React.lazy(() => import('./portfolioIndexSection/portfolioItems'));
 
 const ProjectThumbnails = () => {
 
@@ -15,7 +17,8 @@ const ProjectThumbnails = () => {
                         const arr = thumbnail_details.length;
                         const thumbnailFlexWidth = "Portfolio__thumbnails portfolio-item thumbnailLength--" + arr;
                         const aria = "Link to " + {Project} + "project page";
-                    return <Link to={path} key={id} className={thumbnailFlexWidth} aria-label={aria}><PortfolioItems src={src} alt={alt} heading={Project}/></Link>
+        
+        return <Link to={path} key={id} className={thumbnailFlexWidth} aria-label={aria}><Suspense fallback={<div>Loading...</div>}><PortfolioItems src={src} alt={alt} heading={Project}/></Suspense></Link>
                   })}   
     </>
   )

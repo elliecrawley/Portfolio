@@ -4,7 +4,7 @@
 
     // images
 
-    import HighlighterMobile from "../../assets/images/highlightMobile.png";
+    import HighlighterMobile from "../../assets/images/highlightMobile.webp";
 
     // videos
 
@@ -20,8 +20,8 @@
 
     // images
 
-    import ECGalleryMobile from "../../assets/images/ECgallerymobile.png";
-    import ECGalleryDesktop from "../../assets/images/ECgallery.png";
+    import ECGalleryMobile from "../../assets/images/ECgallerymobile.webp";
+    import ECGalleryDesktop from "../../assets/images/ECgallery.webp";
 
     // videos
 
@@ -34,12 +34,12 @@
 
     // images
 
-    import KOKOabout from "../../assets/images/KOKOabout.png";
-    import KOKOEco from "../../assets/images/KOKOEcoMobile.png";
-    import KOKODandRDesktop from "../../assets/images/KOKODandRDesktop.png";
-    import KOKODandRMobile from "../../assets/images/KOKODandRMobile.png";
-    import KOKOfaqMobile from "../../assets/images/KOKOfaqMobile.png";
-    import KOKOfaqDesktop from "../../assets/images/KOKOfaq.png";
+    import KOKOabout from "../../assets/images/KOKOabout.webp";
+    import KOKOEco from "../../assets/images/KOKOEcoMobile.webp";
+    import KOKODandRDesktop from "../../assets/images/KOKODandRDesktop.webp";
+    import KOKODandRMobile from "../../assets/images/KOKODandRMobile.webp";
+    import KOKOfaqMobile from "../../assets/images/KOKOfaqMobile.webp";
+    import KOKOfaqDesktop from "../../assets/images/KOKOfaq.webp";
 
     // videos
 
@@ -48,26 +48,26 @@
 
 // Yolly
 
-    import YollyProductMobile from "../../assets/images/YollyProductMobile.png";
-    import YollyProductDesktop from "../../assets/images/YollyProductDesktop.png";
-    import YollyCartMobile from "../../assets/images/YollyCartMobile.png";
-    import YollyCartDesktop from "../../assets/images/YollyCartDesktop.png";
-    import Mailchimp from "../../assets/images/mailchimp.png";
+    import YollyProductMobile from "../../assets/images/YollyProductMobile.webp";
+    import YollyProductDesktop from "../../assets/images/YollyProductDesktop.webp";
+    import YollyCartMobile from "../../assets/images/YollyCartMobile.webp";
+    import YollyCartDesktop from "../../assets/images/YollyCartDesktop.webp";
+    import Mailchimp from "../../assets/images/mailchimp.webp";
 
 // Camel Ski School
 
   
-    import CamelProductsMobile from "../../assets/images/CamelProductsMobile.png";
-    import CamelProductsDesktop from "../../assets/images/CamelProductsDesktop.png";
-    import CamelFAQMobile from "../../assets/images/CamelFAQMobile.png";
-    import CamelFAQDesktop from "../../assets/images/CamelFAQDesktop.png";
-    import CamelGalleryMobile from "../../assets/images/CamelGalleryMobile.png";
-    import CamelGalleryDesktop from "../../assets/images/CamelGalleryDesktop.png";
+    import CamelProductsMobile from "../../assets/images/CamelProductsMobile.webp";
+    import CamelProductsDesktop from "../../assets/images/CamelProductsDesktop.webp";
+    import CamelFAQMobile from "../../assets/images/CamelFAQMobile.webp";
+    import CamelFAQDesktop from "../../assets/images/CamelFAQDesktop.webp";
+    import CamelGalleryMobile from "../../assets/images/CamelGalleryMobile.webp";
+    import CamelGalleryDesktop from "../../assets/images/CamelGalleryDesktop.webp";
 
 // Avery Row
 
-    import Klaviyo from "../../assets/images/Klaviyo.png";
-    import GDPR from "../../assets/images/GDPR.png";
+    import Klaviyo from "../../assets/images/Klaviyo.webp";
+    import GDPR from "../../assets/images/GDPR.webp";
 
 export var project_details
 export function projectData() {
@@ -236,7 +236,7 @@ export function projectData() {
     //         {
     //             Key: 3, 
     //             Heading: "Calender",  
-    //             imgSrc: "images/FWCalender.png", 
+    //             imgSrc: "images/FWCalender.webp", 
     //             alt:"test", 
     //            videoSrcDesktop:"", 
     //             type:"video/mp4#t=0.1", 
@@ -246,7 +246,7 @@ export function projectData() {
     //         {
     //             Key: 4, 
     //             Heading: "Contact section", 
-    //             imgSrc: "images/FWContact.png", 
+    //             imgSrc: "images/FWContact.webp", 
     //             alt:"contact form", 
     //            videoSrcDesktop:"", 
     //             type:"", 

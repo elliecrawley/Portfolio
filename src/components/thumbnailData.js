@@ -1,15 +1,15 @@
-import ECthumbnail from "../assets/images/ECthumbnail.png"
-import ECHero from "../assets/images/emilyCarter.png"
-import KOKOthumbnail from "../assets/images/KOKOheroMobile.png"
-import KOKOHero from "../assets/images/KOKOheroDesktop.png"
-import Yollythumbnail from "../assets/images/YollyThumbnail.png"
-import YollyHero from "../assets/images/YollyHero.png"
-import AveryRowDesktop from "../assets/images/AveryRow.png"
-import AveryRowMobile from "../assets/images/AveryRowThumbnail.png"
-import Camelthumbnail from "../assets/images/CamelSki.png"
-import CamelHero from "../assets/images/camelHero.png"
-import Accessibilitythumbnail from "../assets/images/accessiblethumbnail.png"
-import AccessibilityHero from "../assets/images/accessible-hero.png"
+import ECthumbnail from "../assets/images/ECthumbnail.webp"
+import ECHero from "../assets/images/ECHero.webp"
+import KOKOthumbnail from "../assets/images/KOKOThumbnail.webp"
+import KOKOHero from "../assets/images/KOKOHero.webp"
+import Yollythumbnail from "../assets/images/YollyThumbnail.webp"
+import YollyHero from "../assets/images/YollyHero.webp"
+import AveryRowHero from "../assets/images/AveryRowHero.webp"
+import AveryRowThumbnail from "../assets/images/AveryRowThumbnail.webp"
+import Camelthumbnail from "../assets/images/CamelSkiThumbnail.webp"
+import CamelHero from "../assets/images/camelHero.webp"
+import Accessibilitythumbnail from "../assets/images/accessibleThumbnail.webp"
+import AccessibilityHero from "../assets/images/accessibleHero.webp"
 
 export var thumbnail_details
 export function thumbnailData() {
@@ -43,8 +43,8 @@ export function thumbnailData() {
                         id: 4, 
                         path:"/Avery-Row", 
                         Project:"Avery Row", 
-                        src: AveryRowMobile, 
-                        desktopSrc: AveryRowDesktop,
+                        src: AveryRowThumbnail, 
+                        desktopSrc: AveryRowHero,
                         alt:"Avery Row thumbnail"
                 },
                 {
