@@ -61,7 +61,7 @@ section, header, footer{
 }
 
 .LQ-img{
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 a{
