@@ -61,7 +61,8 @@ section, header, footer{
 }
 
 .LQ-img{
-  transition: opacity .5s ease;
+  transition: opacity .3s ease;
+  filter: blur(5px);
 }
 
 a{
@@ -476,8 +477,8 @@ header svg, .menu-icon{
 }
 
 .btn-inner-wrapper {
-  height: 90vh;
-  height: calc((var(--vh) * 90) - 60px);
+  height: calc(100vh - 160);
+  height: calc((var(--vh) * 100) - 160px);
   display: flex;
   width: 80%;
   margin: 0 0 100px 0;
