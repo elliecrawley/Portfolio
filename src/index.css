@@ -48,6 +48,22 @@ section, header, footer{
   display: none;
 }
 
+.preimage-loading {
+  opacity: 0;
+}
+
+.preimage-loaded {
+  opacity: 1;
+}
+
+.image-loaded{
+  display: none!important;
+}
+
+.LQ-img{
+  transition: opacity 1s ease;
+}
+
 a{
   text-decoration: none;
   color: var(--main-text-color);
@@ -351,12 +367,19 @@ header svg, .menu-icon{
   border: none;
 }
 
-.hero-img-mobile{
-  background-image: url(./assets/images/PortPicMobile.webp);
+.hero-img-mobile, .hero-img-mobile-LQ{
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
   background-position: top;
+}
+
+.hero-img-mobile{
+  background-image: url(./assets/images/PortPicDesktop.webp);
+}
+
+.hero-img-mobile-LQ{
+  background-image: url(./assets/images/PortPicMobileLQ.webp);
 }
 
 .hero-img-desktop{
@@ -372,7 +395,7 @@ header svg, .menu-icon{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: calc(50vh - 105px);
+  height: calc(40vh - 105px);
   box-sizing: border-box;
   width: 100vw;
   grid-gap: 10px;
@@ -453,12 +476,11 @@ header svg, .menu-icon{
 }
 
 .btn-inner-wrapper {
-  height: calc(90vh - 80px);
+  height: 90vh;
   height: calc((var(--vh) * 90) - 60px);
   display: flex;
   width: 80%;
-  margin: 0 0 50px 0;
-  margin: 0 0 50px 0;
+  margin: 0 0 100px 0;
   padding: 0;
   border-bottom: var(--border);
   border-left: var(--border);
@@ -473,7 +495,7 @@ header svg, .menu-icon{
 }
 
 @media screen and (min-width: 425px) {
-  .hero-img-mobile {
+  .hero-img-mobile, .hero-img-mobile-LQ {
     background-size: contain;
     background-position: center;
     background-color: var(--contrast-text-color);
@@ -538,7 +560,7 @@ header svg, .menu-icon{
     display: block;
   }
 
-  .hero-img-mobile{
+  .hero-img-mobile, .hero-img-mobile-LQ{
     display: none;
   }
   
@@ -638,7 +660,7 @@ header svg, .menu-icon{
     grid-column: 3;
   }
 
-  .hero-img-mobile{
+  .hero-img-mobile, .hero-img-mobile-LQ{
     display: none
   }
   

@@ -7,12 +7,12 @@ const ViewMore = () => {
 
     return (
         <section className="View-more__container">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <SectionTitle text="View More Projects"/>
             </Suspense>
             <p>Select one of the images below to learn more about the project.</p>
             <div className="View-more__container-inner">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <ProjectThumbnails /> 
             </Suspense>        
             </div>

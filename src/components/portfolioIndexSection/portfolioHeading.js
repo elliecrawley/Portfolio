@@ -15,12 +15,12 @@ const PortfolioHeading = () => {
 
     return (
         <div className="portfolio-wrapper">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div></div>}>
                 <SectionTitle text="Portfolio"/>
             </Suspense>
             <div className="portfolio-item-wrapper">
                 <Link to="/Emily-Carter" className="portfolio-item" aria-label="Link to 'Emily Carter' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='Emily Carter' 
                         text="Shopify store created for Emily Carter, an award-winning British designer specialising in hand illustrated silk accessories, stationery, and furnishings." 
@@ -31,7 +31,7 @@ const PortfolioHeading = () => {
                     /></Suspense>
                 </Link>
                 <Link to="/KOKO" className="portfolio-item" aria-label="Link to 'KOKO' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='KOKO' 
                         text="Shopify store created for KOKO, an exclusive eco-friendly 100% organic apparel brand with designs influenced by artists and musicians" 
@@ -42,7 +42,7 @@ const PortfolioHeading = () => {
                     /></Suspense>
                 </Link>
                 <Link to="/Avery-Row" className="portfolio-item" aria-label="Link to 'Avery Row' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='Avery Row' 
                         text="Shopify store created for Avery Row, an independent British brand specialising in organic textiles and accessories for children." 
@@ -56,7 +56,7 @@ const PortfolioHeading = () => {
                     <PortfolioItems heading='ForestWise' text="A concept piece designing the homepage for a fictional 'forest school' business." languages="JavaScript, HTML5, CSS3, PHP" programmes="InkScape, AdobeXD, ScrollMagic, GSAP" src='images/ForestWisethumbnail.png'/>
                 </Link> */}
                 <Link to="/Yolly" className="portfolio-item" aria-label="Link to 'Yolly' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='Yolly'
                         text="Shopify Store created for Yolly, an independant florist based in London." 
@@ -67,7 +67,7 @@ const PortfolioHeading = () => {
                     /></Suspense>
                 </Link>
                 <Link to="/Camel-Ski-School" className="portfolio-item" aria-label="Link to 'Camel Ski School' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='Camel Ski School' 
                         text="Shopify store created for Camel Ski School, a Cornwall based watersports company who have expanded to sell branded merchendise." 
@@ -78,7 +78,7 @@ const PortfolioHeading = () => {
                     /></Suspense>
                 </Link>
                 <Link to="/Accessiblity-tool" className="portfolio-item" aria-label="Link to 'Accessibility Tool' project page">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<div></div>}>
                     <PortfolioItems 
                         heading='Accessibility Tool' 
                         text="A selection of tools designed to help impove web content accessibility." 

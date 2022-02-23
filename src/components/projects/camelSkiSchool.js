@@ -13,7 +13,7 @@ const CamelSkiSchool = () => {
       }, []);
   return (
     <>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <PortfolioHero/>
             <PortfolioAbout text="Camel Ski School is the UK’s largest waterski centre. Their Shopify store allows them to sell branded merchandise in addition to their main booking site. I assisted the lead developer and designer on this project by uploading new products, editing images, and creating FAQ and Gallery pages. This store was built using the 'Dawn' theme."/>
             <PortfolioResponsibilities title="Responsibilities"/>

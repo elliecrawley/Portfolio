@@ -14,7 +14,7 @@ const SmallerProjects = () => {
       
     return (
         <>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <PortfolioHero/>
             <PortfolioAbout text="I have assisted on several Shopify stores with work such as uploading and updating products and collections, making minor styling edits, installing and configuring apps, and assisting with email marketing campaigns. Below are a selection of clients whose stores I have helped to update or maintain."/>
             <PortfolioResponsibilitiesSecondary title="Client Details"/>

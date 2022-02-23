@@ -12,22 +12,22 @@ const Index = () => {
   document.title = "Ellie Crawley"
   return <>
         <section className="hero">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
           <HeroSection/> 
         </Suspense> 
         </section>
         <section className="about" id="AboutText">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
           <AboutText/>
         </Suspense>
         </section>
         <section className="portfolio" id="Portfolio">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
           <PortfolioHeading/>
         </Suspense>
         </section>
         <section className="contact" id="Contact">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
           <Lightbulb/>
           <ContactText/>
           <ContactForm/>

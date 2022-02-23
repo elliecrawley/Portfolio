@@ -14,7 +14,7 @@ const Yolly = () => {
 
   return (
     <>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div></div>}>
       <PortfolioHero/>
       <PortfolioAbout text="An independent florist based in London. I helped to upload new products and create product collections, edit product descriptions, update delivery information, and create newsletters using MailChimp. This store was built using the 'Debut' theme."/>
       <PortfolioResponsibilities title="Responsibilities"/>

@@ -15,7 +15,7 @@ const EmilyCarter = () => {
 
     return (
         <>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <PortfolioHero/>
             <PortfolioAbout text="Emily Carter is an award-winning British designer based in London, specialising in hand illustrated silk accessories, stationery, and furnishings. She needed to migrate her existing online store to Shopify, which included updating elements of her site design. As an artist, her site needed to support a large number of high resolution images whilst still maintaining fast loading speeds. This site was built using the 'Debut' theme."/>
             <PortfolioResponsibilities title="Responsibilities"/>

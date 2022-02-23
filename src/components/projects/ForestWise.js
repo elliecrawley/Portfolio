@@ -13,7 +13,7 @@ const ForestWise = () => {
       }, []);
     return (
         <>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <PortfolioHero/>
             <PortfolioAbout/>
             <PortfolioResponsibilities/>

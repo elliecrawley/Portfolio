@@ -6,7 +6,7 @@ const PortfolioAbout = ({text}) => {
     return (
         <section className="Porfolio__about-container">
             <div className="Porfolio__about-inner-div">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div></div>}>
                     <SectionTitle text="About the project"/>
                 </Suspense>
                 <p className="about_body">{text}</p>

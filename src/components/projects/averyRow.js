@@ -14,7 +14,7 @@ const AveryRow = () => {
 
     return (
         <>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div></div>}>
             <PortfolioHero/>
             <PortfolioAbout text="This Shopify store was created for Avery Row, an independent British brand specialising in organic textiles and accessories for children. My main roles in this project were to improve GDPR compliance and to support the client to develop email templates using the email marketting platform 'Klaviyo'. This store was built using the 'Prestige' theme."/>
             <PortfolioResponsibilities title="Responsibilities"/>

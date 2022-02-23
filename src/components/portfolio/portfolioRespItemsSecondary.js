@@ -46,7 +46,7 @@ const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDeskto
             <div className="Portfolio__resp-txt">
                 <h3>{Heading}</h3>
                 <p>{Description}</p>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div></div>}>
                   <ButtonSecondary secondaryBtnClass="secondary-btn" href={href}/>
                 </Suspense>
             </div>
