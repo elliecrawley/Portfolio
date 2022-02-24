@@ -1295,6 +1295,7 @@ label {
   height: calc(95vh - 70px);
   height: calc((var(--vh) * 95) - 50px);
   object-fit: cover;
+  transition: opacity .5s ease;
 }
 
 .portfolio__hero-img-desktop{

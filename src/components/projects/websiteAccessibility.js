@@ -17,6 +17,8 @@ const WebsiteAccessibility = () => {
         <>
         <Suspense fallback={<div></div>}>
             <PortfolioHero/>
+        </Suspense>
+        <Suspense fallback={<div></div>}>
             <PortfolioAbout text="A selection of tools to improve the accessibility of written web content for people with visual impairments and dyslexia. This tool is still in the early stages of development and has not yet been tested on dynamic content but in the future I hope to develop it into a Shopify app." />
             <PortfolioResponsibilities title="Key Features"/>
             <ButtonWithGit 
