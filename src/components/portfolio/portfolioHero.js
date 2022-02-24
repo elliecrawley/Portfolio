@@ -15,13 +15,13 @@ const PortfolioHero = () => {
                     return <section key={id} className="portfolio__hero-container">
                     
                     <img 
-                    className={`portfolio__hero-img-desktop LQ-img preimage-${desktopImageLoaded ? 'loaded' :  'loading'}`} 
+                    className={`portfolio__hero-img-desktop preimage-${desktopImageLoaded ? 'loaded' :  'loading'}`} 
                     src={desktopSrc} 
                     alt={alt}
                     onLoad={()=> setDesktopImageLoaded(true)}/>
 
                     <img 
-                    className={`portfolio__hero-img-mobile image-${ mobileImageLoaded ? 'loaded' :  'loading'}`}  
+                    className={`portfolio__hero-img-mobile preimage-${ mobileImageLoaded ? 'loaded' :  'loading'}`}  
                     src={mobileSrc} 
                     alt={alt}
                     onLoad={()=> setMobileImageLoaded(true)}/>
