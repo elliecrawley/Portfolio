@@ -61,7 +61,7 @@ section, header, footer{
 }
 
 .LQ-img{
-  transition: opacity .3s ease;
+  transition: opacity .5s ease;
   filter: blur(5px);
 }
 
@@ -377,10 +377,6 @@ header svg, .menu-icon{
 
 .hero-img-mobile{
   background-image: url(./assets/images/PortPicDesktop.webp);
-}
-
-.hero-img-mobile-LQ{
-  background-image: url(./assets/images/PortPicMobileLQ.webp);
 }
 
 .hero-img-desktop{
@@ -701,6 +697,7 @@ header svg, .menu-icon{
   .hero-cta{
     height: 75px;
     width: 75%;
+    font-size: 1em;
   }
 
 .side-bar-container{

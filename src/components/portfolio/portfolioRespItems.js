@@ -1,6 +1,6 @@
 import React, {useState, useRef, useMemo, useEffect} from "react";
 
-const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDesktop, imgSrcMobile, alt, Heading, Description, imgMobileClass, imgDesktopClass, videoMobileClass, videoDesktopClass, href}) => {
+const PortfolioRespItems = ({videoSrcDesktop, videoSrcMobile, type, imgSrcDesktop, imgSrcMobile, alt, Heading, Description, imgMobileClass, imgDesktopClass, videoMobileClass, videoDesktopClass}) => {
 
         const targetRef = useRef(null);
         const [addClass, setAddClass] = useState("Portfolio__resp-item-container");

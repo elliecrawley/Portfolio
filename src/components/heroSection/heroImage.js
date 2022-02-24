@@ -1,37 +1,31 @@
 import React from "react"
-import PortPic from "../../assets/images/PortPic-min.webp"
-import PortPicLQ from "../../assets/images/PortPicMobileLQ.webp"
-
+import PortPic from "../../assets/images/PortPicDesktop.webp"
+import PortPicLQ from "../../assets/images/PortPicDesktopLQ.webp"
 
 const HeroImage = () => {
 
-    const [preload, setPreload]=React.useState("");
-    const [imageLoaded, setImageLoaded]=React.useState(false);
-
+    const [desktopPreload, setDesktopPreload]=React.useState("");
+    const [desktopImageLoaded, setDesktopImageLoaded]=React.useState(false);
 
     return (
         <> 
-            <div 
-            className={`hero-img hero-img-mobile-LQ LQ-img ${preload} preimage-${imageLoaded ? 'loaded' :  'loading'}`} 
-            alt="Ellie Crawley" 
-            onLoad={()=> setImageLoaded(true)}/>
 
             <div 
             className="hero-img hero-img-mobile" 
             alt="Ellie Crawley" 
-            onLoad={()=> setPreload("image-loaded")}/>
+            />
 
             <img 
-            className={`hero-img hero-img-desktop LQ-img ${preload} preimage-${imageLoaded ? 'loaded' :  'loading'}`}
+            className={`hero-img hero-img-desktop LQ-img ${desktopPreload} preimage-${desktopImageLoaded ? 'loaded' :  'loading'}`}
             src={PortPicLQ} 
             alt="Ellie Crawley"
-            onLoad={()=> setImageLoaded(true)}/>
+            onLoad={()=> setDesktopImageLoaded(true)}/>
 
             <img 
             className="hero-img hero-img-desktop"
             src={PortPic} 
             alt="Ellie Crawley" 
-            onLoad={()=> setPreload("image-loaded")}/>
+            onLoad={()=> setDesktopPreload("image-loaded")}/>
         </>
     )
 }
