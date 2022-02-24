@@ -156,6 +156,7 @@ header a:hover, header a:focus, .side-bar a:hover, .side-bar a:focus, footer a:h
 
 .portfolio-item:hover .revealOnHover, .portfolio-item:focus .revealOnHover {
   opacity: 1;
+  display: block;
   transition: opacity 0.5s ease 0.1s;
 }
 
@@ -376,7 +377,7 @@ header svg, .menu-icon{
 }
 
 .hero-img-mobile{
-  background-image: url(./assets/images/PortPicDesktop.webp);
+  background-image: url(./assets/images/PortPicMobile.webp);
 }
 
 .hero-img-desktop{
@@ -650,7 +651,7 @@ header svg, .menu-icon{
 @media screen and (min-width: 1024px) and (min-height: 501px){
 
   .hero{
-    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-columns: 50px calc(50vw - 50px) calc(50vw - 50px) 50px;
   }
 
   .hero-img{
@@ -662,7 +663,8 @@ header svg, .menu-icon{
   }
   
 .hero-img-desktop{
-  height: calc(100vh - 50px);
+  max-height: calc(100vh - 50px);
+  height: -webkit-fill-available;
   object-fit: cover;
   width: calc(50vw - 50px);
   object-position: top;
@@ -670,14 +672,23 @@ header svg, .menu-icon{
 }
 
   .herotext {
+    grid-row: 1;
     grid-column: 2;
     margin: 0 0 0 20%;
     height: 60vh;
+    backdrop-filter: none;
+    padding: 0px;
+    width: auto;
+    background-color: transparent;
+    backdrop-filter: none;
+    align-items: flex-start;
   }
 
   .hero-headline{
     font-size: 4em;
     padding: 50px 0 0 0;
+    width: auto;
+    text-align: left;
   }
 
   .hero-subheading{
@@ -692,12 +703,15 @@ header svg, .menu-icon{
     grid-column: 2;
     margin-bottom: 50px;
     height: auto;
+    border-right: none;
   }
 
   .hero-cta{
     height: 75px;
     width: 75%;
     font-size: 1em;
+    background-color: transparent;
+    backdrop-filter: none;
   }
 
 .side-bar-container{
@@ -731,8 +745,9 @@ header svg, .menu-icon{
 }
 
 .btn-inner-wrapper{
-  height: calc((var(--vh) * 100) - 150px);
-  width: 80%;
+    height: 100%;
+    width: 80%;
+    margin: 0 0 0 -3px;
 }
 
 }
@@ -1529,6 +1544,7 @@ label {
 
 .revealOnHover{
   opacity: 0;
+  display: none;
   -webkit-transition: opacity 0.1s ease 0s;
 }
 
