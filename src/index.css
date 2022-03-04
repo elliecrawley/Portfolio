@@ -651,7 +651,7 @@ header svg, .menu-icon{
 @media screen and (min-width: 1024px) and (min-height: 501px){
 
   .hero{
-    grid-template-columns: 50px calc(50vw - 50px) calc(50vw - 50px) 50px;
+    grid-template-columns: 50px calc(50vw - 50px) auto 50px;
   }
 
   .hero-img{
@@ -666,7 +666,7 @@ header svg, .menu-icon{
   max-height: calc(100vh - 50px);
   height: -webkit-fill-available;
   object-fit: cover;
-  width: calc(50vw - 50px);
+  width: -webkit-fill-available;
   object-position: top;
   display: block;
 }
