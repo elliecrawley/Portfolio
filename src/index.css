@@ -243,7 +243,7 @@ header svg{
 .dropdownClosed ul, .dropdownOpen ul{
   flex-direction: column;
   align-items: center;
-  grid-gap: 25px;
+  gap: 25px;
   overflow: hidden;
   visibility: hidden;
 }
@@ -396,7 +396,7 @@ header svg, .menu-icon{
   height: calc(40vh - 105px);
   box-sizing: border-box;
   width: 100vw;
-  grid-gap: 10px;
+  gap: 10px;
   margin: 0;
   padding: 20px;
 }
@@ -1415,7 +1415,7 @@ label {
 
 .Portfolio__resp-item-container{
   display: flex;
-  grid-gap: 25px;
+  gap: 25px;
   flex-direction: column;
   margin: 25px 0;
   align-items: center;
@@ -1462,7 +1462,7 @@ label {
 @media screen and (min-width: 550px){
   .Portfolio__resp-item-container{
     flex-direction: row;
-    grid-gap: 50px;
+    gap: 50px;
   }
 
   .Portfolio__resp-item-container:nth-child(odd){
@@ -1501,7 +1501,7 @@ label {
 
   .Portfolio__resp-item-container{
     flex-direction: row;
-    grid-gap: 50px;
+    gap: 50px;
     margin: 50px 0;
   }
 
@@ -1520,7 +1520,7 @@ label {
 
 .View-more__container-inner{
   display: flex;
-  grid-gap: 20px;
+  gap: 20px;
   width: auto;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -1706,7 +1706,7 @@ footer{
   align-items: center;
   flex-direction: column;
   padding: 25px;
-  grid-gap: 25px;
+  gap: 25px;
   border-top: var(--border);
 }
 
@@ -1725,7 +1725,7 @@ footer .footer-logo, footer .copyright, footer .social, footer .footer-logo-cont
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  grid-gap: 25px;
+  gap: 25px;
 }
 
 footer nav{
@@ -1734,7 +1734,7 @@ footer nav{
 }
 
 footer nav ul{
-  grid-gap: 10px;
+  gap: 10px;
   align-items: center;
   flex-direction: column;
 }
@@ -1742,7 +1742,7 @@ footer nav ul{
 footer .social{
   display: flex;
   justify-content: space-around;
-  grid-gap: 20px;
+  gap: 20px;
 }
 
 .social svg{
@@ -1753,7 +1753,7 @@ footer .social{
 footer .copyright{
     display: flex;
     align-items: center;
-    grid-gap: 10px;
+    gap: 10px;
     width: max-content;
     flex-wrap: wrap;
     justify-content: center;
@@ -1787,7 +1787,7 @@ nav ul li{
   }
 
   .footer-logo-container, .footer-nav-container {
-    grid-gap: 50px;
+    gap: 50px;
   }
   
 }
