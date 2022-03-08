@@ -25,7 +25,7 @@
 
     // videos
 
-    import infiniteScroll from "../../assets/videos/InfiniteScroll.mp4";
+    import ISdesktop from "../../assets/videos/ISdesktop.mp4"; 
     import ISmobile from "../../assets/videos/ISmobile.mp4";
     import customDesktop from "../../assets/videos/Personalisation.mp4";
     import customMobile from "../../assets/videos/customMobile.mp4";
@@ -130,7 +130,7 @@ export function projectData() {
                 imgSrcMobile: "",
                 imgSrcDesktop: "", 
                 alt:"", 
-                videoSrcDesktop: infiniteScroll + "#t=0.1",
+                videoSrcDesktop: ISdesktop + "#t=0.1",
                 videoSrcMobile: ISmobile + "#t=0.1", 
                 type:"video/mp4", 
                 media:"video",
