@@ -26,7 +26,7 @@
     // videos
 
     import infiniteScroll from "../../assets/videos/infiniteScroll.mp4";
-    import ISmobile from "../../assets/videos/customMobile.mp4";
+    import ISmobile from "../../assets/videos/ISmobile.mp4";
     import customDesktop from "../../assets/videos/Personalisation.mp4";
     import customMobile from "../../assets/videos/customMobile.mp4";
 
