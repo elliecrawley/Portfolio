@@ -10,7 +10,6 @@ import Index from "./components";
 //Portfolio
 import WebsiteAccessibility from "./components/projects/websiteAccessibility";
 import EmilyCarter from "./components/projects/emilyCarter";
-//import ForestWise from "./components/projects/ForestWise";
 import KOKO from "./components/projects/KOKO";
 import Yolly from "./components/projects/yolly";
 import CamelSkiSchool from "./components/projects/camelSkiSchool";

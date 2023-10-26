@@ -823,6 +823,11 @@ section.portfolio{
   margin-left: 20px;
 }
 
+.portfolio-wrapper .temp-text{
+  padding: 0 20px 50px 20px;
+  margin: 0;
+}
+
 .portfolio-item-wrapper {
   display: flex;
   flex-wrap: wrap;
